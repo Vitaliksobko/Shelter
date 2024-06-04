@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shelter.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+343a72d20b44272e252b7ddf721d32f77108ca6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shelter.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shelter.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
