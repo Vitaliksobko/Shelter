@@ -1,0 +1,40 @@
+<body>
+    <div class="books">
+      <span>Product:</span>
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Number</th>
+              <th scope="col">Image</th>
+              <th scope="col">Name</th>
+              <th scope="col">Description</th>
+              <th scope="col">Breed</th>
+              <th scope="col">Age</th>
+              
+              <th scope="col"><button class="btn btn-dark" [routerLink]="'create-animal/'">Add</button></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let animal of animals; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>
+                <div class="image-container">
+                  <img [src]="animal.image" alt="" class="product-image">
+                </div>
+              </td>
+              <td>{{animal.name}}</td>
+              <td>{{animal.description}}</td>
+              <td>{{animal.breed}}</td>
+              <td>{{animal.age}}</td>
+              
+
+             
+              
+            </tr>
+          </tbody>
+        </table>
+        <button class="btn btn-dark" [routerLink]="'/admin'">Back</button>
+      </div>
+    </div>
+  </body>

@@ -1,0 +1,68 @@
+.books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .container {
+    width: 80%;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .btn {
+    margin-right: 5px;
+  }
+  
+  .btn-dark {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+
+  body{
+    padding-bottom: 100px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/011/813/624/non_2x/retro-distressed-texture-free-vector.jpg");
+}
+
+.image-container {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}

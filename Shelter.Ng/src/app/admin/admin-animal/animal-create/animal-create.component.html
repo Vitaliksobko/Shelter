@@ -1,0 +1,42 @@
+<body>
+    <div class="container">
+      <div class="container-md">
+        <div class="header mb-4">
+          <span class="h4">Create Product</span>
+        </div>
+        <form>
+          <div class="mb-3">
+            <label for="Name" class="form-label">Image:</label>
+            <div class="d-flex align-items-center">
+              <img src="trustPath" alt="" class="img-thumbnail me-3" style="max-width: 100px;">
+              <input type="file" name="image" class="form-control" (change)="onFileChange($event)" id="image">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" name="name" class="form-control" id="name" [(ngModel)]="animal.name">
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description:</label>
+            <textarea name="description" class="form-control" id="description" rows="3" [(ngModel)]="animal.description"></textarea>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="age" class="form-label">age:</label>
+              <input type="number" name="age" class="form-control" id="age" [(ngModel)]="animal.age">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="breed" class="form-label">breed:</label>
+              <input type="text" name="breed" class="form-control" id="breed" [(ngModel)]="animal.breed">
+            </div>
+          </div>
+          
+          <div class="btns">
+            <button type="submit" name="stage7" class="btn btn-primary me-2" [routerLink]="['/admin-animal']" (click)="onCreate()">Submit</button>
+            <button class="btn btn-secondary" [routerLink]="['/admin-product']">Back</button>
+          </div>
+        </form>
+       
+      </div>
+    </div>
+  </body>
