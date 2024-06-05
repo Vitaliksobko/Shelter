@@ -9,6 +9,7 @@ public class MappingProfile : Profile
     public MappingProfile()
     {
         CreateMap<AnimalDto, Animal>().ReverseMap();
+        CreateMap<NewsDto, News>().ReverseMap();
         
     }
 }

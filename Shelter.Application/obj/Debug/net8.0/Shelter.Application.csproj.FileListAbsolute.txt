@@ -15,3 +15,4 @@ D:\Prakt\Shelter\Shelter.Application\obj\Debug\net8.0\Shelter.Application.dll
 D:\Prakt\Shelter\Shelter.Application\obj\Debug\net8.0\refint\Shelter.Application.dll
 D:\Prakt\Shelter\Shelter.Application\obj\Debug\net8.0\Shelter.Application.pdb
 D:\Prakt\Shelter\Shelter.Application\obj\Debug\net8.0\ref\Shelter.Application.dll
+D:\Prakt\Shelter\Shelter.Application\obj\Debug\net8.0\Shelter.Application.sourcelink.json

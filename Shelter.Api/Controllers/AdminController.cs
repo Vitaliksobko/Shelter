@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Shelter.Application.Abstractions;
 using Shelter.Core.Dtos;
 using Shelter.Core.Models;
+using Shop.Core.Dtos;
 
 namespace Shelter.Api.Controllers;
 [ApiController]
@@ -39,6 +40,43 @@ public class AdminController : Controller
             return BadRequest(e.Message);
         }
     }
+    
+    
+    [HttpGet("users")]
+    public async Task<List<User>> GetAllUsers()
+    {
+        return await _adminService.GetAllUsers();
+    }
+
+    [HttpPut("role")]
+    public async Task<IActionResult> ChangeUserRole(ChangeRoleDto request)
+    {
+        try
+        {
+            await _adminService.ChangeUserRole(request);
+
+            return Ok();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+    
+    [HttpDelete("user/{id:guid}")]
+    public async Task DeleteUser(Guid id)
+    {
+        await _adminService.DeleteUser(id);
+    }
+    
+    [HttpDelete("animal/{id:guid}")]
+    public async Task DeleteAnimal(Guid id)
+    {
+        await _adminService.DeleteAnimal(id);
+    }
+
+    
+   
     
     
 }

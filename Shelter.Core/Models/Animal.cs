@@ -15,11 +15,9 @@ public class Animal
     
     public string Description { get; set; }
     
+    
+    
     public List<Booking> Bookings { get; set; }
     
-    public DateTime? RegistrationDate { get; set; }
-    
-    public DateTime? EditDate { get; set; }
-    
-    public DateTime? DeleteDate { get; set; }
+  
 }

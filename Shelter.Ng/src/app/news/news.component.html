@@ -1,0 +1,24 @@
+<body>
+    <div class="container">
+      <h2>Новини</h2>
+      <div class="row">
+        <div *ngFor="let new of news" class="col-md-4 mb-4">
+          <div class="card h-100 product-card" >
+            <div class="card mb-4">
+              <img [src]="new.image" class="card-img-top" alt="{{ new.title }}">
+              <div class="card-body">
+                <h5 class="card-title">Title: {{ new.title }}</h5>
+                <div class="d-flex justify-content-between">
+                  <p class="mb-0">Content: {{ new.content }}</p>
+                </div>
+                <h5 class="card-title">Summary: {{ new.summary }}</h5>
+              </div>
+            </div>
+            <p class="card-text">Author: {{ new.author }}</p>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </body>
+  

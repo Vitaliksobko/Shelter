@@ -13,7 +13,7 @@ export class AnimalService {
 
   constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<Animal[]> {
+  getAnimals(): Observable<Animal[]> {
     return this.http.get<Animal[]>(this.apiUrl);
   }
 

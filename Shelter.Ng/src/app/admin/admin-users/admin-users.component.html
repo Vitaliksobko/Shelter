@@ -1,0 +1,31 @@
+<body>
+    <div class="books">
+         <span>Users:</span>
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Number</th>
+              <th scope="col">FirstName</th>
+              <th scope="col">SecondName</th>
+              <th scope="col">Email</th>
+              <th scope="col">Role</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users; let i = index">
+              <td>{{ i + 1 }}</td>
+              
+              <td>{{ user.firstName }}</td>
+              <td>{{ user.secondName }}</td>
+              <td>{{ user.email }}</td>
+              <td><button class="btn btn-dark" (click)="changeRole(user.id)">{{ user.isAdmin ? "Change to user" : "Make admin" }}</button></td>
+              <td><button *ngIf="user.id != currentUserId" class="btn btn-danger" (click)="delete(user.id)">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="btn btn-dark" [routerLink]="'/admin'">Back</button>
+      </div>
+    </div>
+  </body>

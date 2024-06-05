@@ -20,6 +20,13 @@ import { AdminRoutingModule } from './admin/admin-routing.module';
 import { AdminAnimalComponent } from './admin/admin-animal/admin-animal.component';
 import { AnimalCreateComponent } from './admin/admin-animal/animal-create/animal-create.component';
 import { HomeComponent } from './home/home.component';
+import { NewsComponent } from './news/news.component';
+import { AdminNewsComponent } from './admin/admin-news/admin-news.component';
+import { CreateNewsComponent } from './admin/admin-news/create-news/create-news.component';
+import { AdminUsersComponent } from './admin/admin-users/admin-users.component';
+import { AminalUpdateComponent } from './admin/admin-animal/aminal-update/aminal-update.component';
+import { NewsUpdateComponent } from './admin/admin-news/news-update/news-update.component';
+import { TopMenuComponent } from './top-menu/top-menu.component';
 
 
 
@@ -36,7 +43,14 @@ import { HomeComponent } from './home/home.component';
     AdminComponent,
     AdminAnimalComponent,
     AnimalCreateComponent,
-    HomeComponent
+    HomeComponent,
+    NewsComponent,
+    AdminNewsComponent,
+    CreateNewsComponent,
+    AdminUsersComponent,
+    AminalUpdateComponent,
+    NewsUpdateComponent,
+    TopMenuComponent
 
     
   ],

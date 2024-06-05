@@ -1,0 +1,91 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2a2a;
+    padding: 10px;
+    padding-left: 20px;
+  }
+  .header-catalog{
+    
+  }
+
+  .header-button{
+    padding-left: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 60px;
+    background-color: #e00027;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    border-color: none;
+    text-decoration: none;
+  }
+  .header-button:hover{
+    background-color: #f97988;
+    text-decoration: none;
+
+  }
+  
+  .header-left {
+    margin-left: 180px;
+  }
+  
+  .header-center {
+    /* Стилі для центральної частини хедера */
+  }
+  
+  .header-center input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .header-right button {
+    margin-left: 20px;
+    margin-right: 40px; /* Додайте відстань між кнопками */
+  }
+  
+  .header-right ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-right li {
+    margin-left: 20px;
+    
+  }
+  
+  .header-right a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Стилі для хедера */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+  }
+  nav{
+    text-align: right;
+  }
+  .navigation{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+   
+  }

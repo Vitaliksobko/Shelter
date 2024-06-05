@@ -11,7 +11,7 @@
               <th scope="col">Description</th>
               <th scope="col">Breed</th>
               <th scope="col">Age</th>
-              
+              <th scope="col">Actions</th>
               <th scope="col"><button class="btn btn-dark" [routerLink]="'create-animal/'">Add</button></th>
             </tr>
           </thead>
@@ -28,7 +28,8 @@
               <td>{{animal.breed}}</td>
               <td>{{animal.age}}</td>
               
-
+              <td><button class="btn btn-warning">Edit</button></td>
+              <td><button class="btn btn-danger" (click)="delete(animal.animalId)" >Delete</button></td>
              
               
             </tr>

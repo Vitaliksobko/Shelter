@@ -10,17 +10,15 @@ import { AnimalService } from '../../services/animalService';
 })
 export class AnimalComponent {
   animals: Animal[] = [];
-  errorMessage: string = '';
-  inCartMap: Map<string, boolean> = new Map<string, boolean>();
   constructor(private animalService: AnimalService, private localService: LocalService) { }
 
   ngOnInit(): void {
-    this.getProducts();
+    this.getAnimals();
     
   }
 
-  getProducts(): void {
-    this.animalService.getProducts()
+  getAnimals(): void {
+    this.animalService.getAnimals()
       .subscribe(animals => this.animals = animals);
   }
 

@@ -1,0 +1,41 @@
+<body>
+    <div class="books">
+      <span>news:</span>
+      <div class="container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Number</th>
+              <th scope="col">Image</th>
+              <th scope="col">title</th>
+              <th scope="col">content</th>
+              <th scope="col">summary</th>
+              <th scope="col">author</th>
+              <th scope="col">Actions</th>
+              <th scope="col"><button class="btn btn-dark" [routerLink]="'create-news/'">Add</button></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let new of news; let i = index">
+              <td>{{ i + 1 }}</td>
+              <td>
+                <div class="image-container">
+                  <img [src]="new.image" alt="" class="product-image">
+                </div>
+              </td>
+              <td>{{new.title}}</td>
+              <td>{{new.content}}</td>
+              <td>{{new.summary}}</td>
+              <td>{{new.author}}</td>
+              
+              
+              <td><button class="btn btn-warning">Edit</button></td>
+              <td><button class="btn btn-danger"(click)="delete(new.newsId)" >Delete</button></td>
+              
+            </tr>
+          </tbody>
+        </table>
+        <button class="btn btn-dark" [routerLink]="'/admin'">Back</button>
+      </div>
+    </div>
+  </body>

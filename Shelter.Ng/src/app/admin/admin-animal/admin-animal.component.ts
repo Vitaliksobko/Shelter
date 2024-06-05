@@ -22,6 +22,16 @@ export class AdminAnimalComponent  implements OnInit{
       .subscribe(animals => this.animals = animals);
   }
 
- 
+  delete(id: string) {
+    this.adminService.deleteAnimal(id).subscribe(
+      () => {
+        console.log('product deleted successfully');
+        this.adminService.getAnimals().subscribe(data => {
+          this.animals = data;
+        });
+      },
+      
+    );
+  }
 
 }

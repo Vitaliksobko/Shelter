@@ -138,15 +138,9 @@ namespace Shelter.infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("timestamp with time zone");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<DateTime?>("EditDate")
-                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Image")
                         .IsRequired()
@@ -155,9 +149,6 @@ namespace Shelter.infrastructure.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<DateTime?>("RegistrationDate")
-                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("AnimalId");
 
@@ -191,6 +182,37 @@ namespace Shelter.infrastructure.Migrations
                     b.ToTable("Bookings");
                 });
 
+            modelBuilder.Entity("Shelter.Core.Models.News", b =>
+                {
+                    b.Property<Guid>("NewsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Author")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Summary")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("NewsId");
+
+                    b.ToTable("News");
+                });
+
             modelBuilder.Entity("Shelter.Core.Models.Role", b =>
                 {
                     b.Property<Guid>("Id")
@@ -220,13 +242,13 @@ namespace Shelter.infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("794db7da-574d-43b1-a0da-018152cdad3f"),
+                            Id = new Guid("ad894c5c-0b3a-4ac2-afb0-b7efeebeab10"),
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = new Guid("3aadd642-600f-45f5-b90c-9a6a870d5c9b"),
+                            Id = new Guid("0c6bb84f-47a3-422a-8d3f-b761286fb0db"),
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -244,12 +266,6 @@ namespace Shelter.infrastructure.Migrations
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("text");
-
-                    b.Property<DateTime>("DeleteDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime>("EditDate")
-                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -284,9 +300,6 @@ namespace Shelter.infrastructure.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("boolean");
-
-                    b.Property<DateTime>("RegistrationDate")
-                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("SecondName")
                         .IsRequired()

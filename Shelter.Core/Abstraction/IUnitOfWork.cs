@@ -7,5 +7,7 @@ public interface IUnitOfWork
     IAnimalRepository Animal { get; }
     
     IBookingRepository Booking { get; }
+    
+    INewsRepository News { get; }
     Task SaveAsync();
 }
