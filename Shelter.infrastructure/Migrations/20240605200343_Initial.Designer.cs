@@ -12,7 +12,7 @@ using Shelter.infrastructure;
 namespace Shelter.infrastructure.Migrations
 {
     [DbContext(typeof(ShelterDbContext))]
-    [Migration("20240603192444_Initial")]
+    [Migration("20240605200343_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -141,22 +141,17 @@ namespace Shelter.infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime?>("DeleteDate")
-                        .HasColumnType("timestamp with time zone");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime?>("EditDate")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
-
-                    b.Property<DateTime?>("RegistrationDate")
-                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("AnimalId");
 
@@ -190,6 +185,37 @@ namespace Shelter.infrastructure.Migrations
                     b.ToTable("Bookings");
                 });
 
+            modelBuilder.Entity("Shelter.Core.Models.News", b =>
+                {
+                    b.Property<Guid>("NewsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Author")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Summary")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("NewsId");
+
+                    b.ToTable("News");
+                });
+
             modelBuilder.Entity("Shelter.Core.Models.Role", b =>
                 {
                     b.Property<Guid>("Id")
@@ -219,13 +245,13 @@ namespace Shelter.infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("62618197-b677-4d02-8cf2-5544b477a03f"),
+                            Id = new Guid("41a2d739-3f09-498d-9989-8b07e1a73069"),
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = new Guid("a07b034f-cc90-4747-bce4-0490fa99dbd5"),
+                            Id = new Guid("9974388e-e1f7-4d52-9c49-0c36e5343810"),
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -243,12 +269,6 @@ namespace Shelter.infrastructure.Migrations
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("text");
-
-                    b.Property<DateTime>("DeleteDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime>("EditDate")
-                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -283,9 +303,6 @@ namespace Shelter.infrastructure.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("boolean");
-
-                    b.Property<DateTime>("RegistrationDate")
-                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("SecondName")
                         .IsRequired()

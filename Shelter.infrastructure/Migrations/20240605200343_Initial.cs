@@ -19,13 +19,11 @@ namespace Shelter.infrastructure.Migrations
                 columns: table => new
                 {
                     AnimalId = table.Column<Guid>(type: "uuid", nullable: false),
+                    Image = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: false),
                     Age = table.Column<int>(type: "integer", nullable: false),
                     Breed = table.Column<string>(type: "text", nullable: false),
-                    Description = table.Column<string>(type: "text", nullable: false),
-                    RegistrationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    EditDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    DeleteDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                    Description = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -53,9 +51,6 @@ namespace Shelter.infrastructure.Migrations
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     FirstName = table.Column<string>(type: "text", nullable: false),
                     SecondName = table.Column<string>(type: "text", nullable: false),
-                    RegistrationDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    EditDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    DeleteDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UserName = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
@@ -74,6 +69,22 @@ namespace Shelter.infrastructure.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "News",
+                columns: table => new
+                {
+                    NewsId = table.Column<Guid>(type: "uuid", nullable: false),
+                    Image = table.Column<string>(type: "text", nullable: false),
+                    Title = table.Column<string>(type: "text", nullable: false),
+                    Content = table.Column<string>(type: "text", nullable: false),
+                    Author = table.Column<string>(type: "text", nullable: false),
+                    Summary = table.Column<string>(type: "text", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_News", x => x.NewsId);
                 });
 
             migrationBuilder.CreateTable(
@@ -214,8 +225,8 @@ namespace Shelter.infrastructure.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { new Guid("62618197-b677-4d02-8cf2-5544b477a03f"), null, "User", "USER" },
-                    { new Guid("a07b034f-cc90-4747-bce4-0490fa99dbd5"), null, "Admin", "ADMIN" }
+                    { new Guid("41a2d739-3f09-498d-9989-8b07e1a73069"), null, "User", "USER" },
+                    { new Guid("9974388e-e1f7-4d52-9c49-0c36e5343810"), null, "Admin", "ADMIN" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -286,6 +297,9 @@ namespace Shelter.infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "Bookings");
+
+            migrationBuilder.DropTable(
+                name: "News");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

@@ -242,13 +242,13 @@ namespace Shelter.infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ad894c5c-0b3a-4ac2-afb0-b7efeebeab10"),
+                            Id = new Guid("41a2d739-3f09-498d-9989-8b07e1a73069"),
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = new Guid("0c6bb84f-47a3-422a-8d3f-b761286fb0db"),
+                            Id = new Guid("9974388e-e1f7-4d52-9c49-0c36e5343810"),
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shelter.infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7923fe584467ee748891423bbaab163d180fa1a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb6856a88db9b97f27544886087507d99f859550")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shelter.infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shelter.infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
