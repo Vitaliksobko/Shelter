@@ -4,8 +4,9 @@ namespace Shelter.Core.Dtos;
 
 public class CreateAnimalDto
 {
-    public IFormFile Image { get; set; }
     
+    
+    public IEnumerable<IFormFile> Images { get; set; }
     public string Name { get; set; }
     
     public int Age { get; set; }

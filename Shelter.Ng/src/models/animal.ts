@@ -5,6 +5,7 @@ export class Animal {
     breed : string = '';
     description : string = '';
     image: string | null = '';
+    images: string[] = []; // Змінили image на images
     
 
 }

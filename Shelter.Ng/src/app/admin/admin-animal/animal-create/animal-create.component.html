@@ -7,10 +7,14 @@
         <form>
           <div class="mb-3">
             <label for="Name" class="form-label">Image:</label>
-            <div class="d-flex align-items-center">
-              <img src="trustPath" alt="" class="img-thumbnail me-3" style="max-width: 100px;">
-              <input type="file" name="image" class="form-control" (change)="onFileChange($event)" id="image">
+            <div class="mb-3">
+              <label for="images" class="form-label">Images:</label>
+              <input type="file" name="images" class="form-control" (change)="onFileChange($event)" id="images" multiple="multiple">
+             
             </div>
+
+            
+            
           </div>
           <div class="mb-3">
             <label for="name" class="form-label">Name:</label>
@@ -32,8 +36,8 @@
           </div>
           
           <div class="btns">
-            <button type="submit" name="stage7" class="btn btn-primary me-2" [routerLink]="['/admin-animal']" (click)="onCreate()">Submit</button>
-            <button class="btn btn-secondary" [routerLink]="['/admin-product']">Back</button>
+            <button type="submit" name="stage7" [routerLink]="['/admin-animal']" class="btn btn-primary me-2"  (click)="onCreate()">Submit</button>
+            <button class="btn btn-secondary" [routerLink]="['/admin-animal']">Back</button>
           </div>
         </form>
        

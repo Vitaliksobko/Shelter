@@ -22,29 +22,32 @@ export class AnimalCreateComponent  {
 
 
 
-  onCreate() {
-    this.formData = new FormData();
-    this.formData.append("Name", this.animal.name);
-    this.formData.append("Description", this.animal.description);
-    this.formData.append("Age", this.animal.age.toString());
-    this.formData.append("Breed", this.animal.breed);
-    
-    if (this.selectedFile) 
-      this.formData.append('Image', this.selectedFile);
+  selectedFiles: File[] = [];
 
-    
-  
-  
-    this.adminService.createAnimal(this.formData).subscribe(
-      () => {
-        console.log("Created")
+onCreate() {
+  this.formData = new FormData();
+  this.formData.append("Name", this.animal.name);
+  this.formData.append("Description", this.animal.description);
+  this.formData.append("Age", this.animal.age.toString());
+  this.formData.append("Breed", this.animal.breed);
 
-      },
-     
-    );
+  if (this.selectedFiles.length > 0) {
+    for (let i = 0; i < this.selectedFiles.length; i++) {
+      this.formData.append('Images', this.selectedFiles[i]);
+    }
   }
 
-  onFileChange(event: any) {
-    this.selectedFile = event.target.files[0];
-  }
+  this.adminService.createAnimal(this.formData).subscribe(
+    () => {
+      console.log("Created");
+    },
+    (error) => {
+      console.error(error);
+    }
+  );
+}
+
+onFileChange(event: any) {
+  this.selectedFiles = event.target.files;
+}
 }
