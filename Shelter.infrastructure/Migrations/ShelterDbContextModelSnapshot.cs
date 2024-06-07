@@ -142,9 +142,9 @@ namespace Shelter.infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Image")
+                    b.Property<string[]>("Images")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("text[]");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -242,13 +242,13 @@ namespace Shelter.infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("41a2d739-3f09-498d-9989-8b07e1a73069"),
+                            Id = new Guid("6e4cea63-919b-4c63-b222-d335c0a5d1fb"),
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = new Guid("9974388e-e1f7-4d52-9c49-0c36e5343810"),
+                            Id = new Guid("6ff9d5b7-2ea9-4be3-8dd0-36c602da1ddf"),
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

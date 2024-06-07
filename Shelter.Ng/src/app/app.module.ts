@@ -27,6 +27,7 @@ import { AdminUsersComponent } from './admin/admin-users/admin-users.component';
 import { AminalUpdateComponent } from './admin/admin-animal/aminal-update/aminal-update.component';
 import { NewsUpdateComponent } from './admin/admin-news/news-update/news-update.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -50,7 +51,8 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
     AdminUsersComponent,
     AminalUpdateComponent,
     NewsUpdateComponent,
-    TopMenuComponent
+    TopMenuComponent,
+    AboutComponent
 
     
   ],

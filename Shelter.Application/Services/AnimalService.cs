@@ -29,7 +29,7 @@ public class AnimalService(IUnitOfWork _unitOfWork, IMapper _mapper) : IAnimalSe
         var animal = await _unitOfWork.Animal.GetSingleByConditionAsync(a => a.AnimalId == animalIdDto.AnimalId);
         if (animal == null)
         {
-            // Обробка ситуації, коли тварину не знайдено
+           
             return null;
         }
 

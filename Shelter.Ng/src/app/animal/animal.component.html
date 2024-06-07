@@ -4,9 +4,9 @@
       <div class="row">
         <div *ngFor="let animal of animals" class="col-md-4 mb-4">
           <div class="card h-100 product-card" [routerLink]="'/currentanimal/' + animal.animalId">
-            <div class="card mb-4">
-              <img [src]="animal.image" class="card-img-top" alt="{{ animal.name }}">
-              <div class="card-body">
+            <div *ngFor="let image of animal.images" class="card mb-4">
+              <img [src]="image" class="card-img-top" alt="{{ animal.name }}">
+              <div  class="card-body" >
                 <h5 class="card-title">Name: {{ animal.name }}</h5>
                 <div class="d-flex justify-content-between">
                   <p class="mb-0">Breed: {{ animal.breed }}</p>
@@ -22,3 +22,5 @@
     </div>
   </body>
   
+
+

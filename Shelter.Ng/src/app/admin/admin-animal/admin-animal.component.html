@@ -19,9 +19,10 @@
             <tr *ngFor="let animal of animals; let i = index">
               <td>{{ i + 1 }}</td>
               <td>
-                <div class="image-container">
-                  <img [src]="animal.image" alt="" class="product-image">
-                </div>
+              
+                <div  class="image-container" *ngFor="let image of animal.images">
+                  <img [src]="image" alt="{{animal.name}}" class="product-image">
+              </div>
               </td>
               <td>{{animal.name}}</td>
               <td>{{animal.description}}</td>
