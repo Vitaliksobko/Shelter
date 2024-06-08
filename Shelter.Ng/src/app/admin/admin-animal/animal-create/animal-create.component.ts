@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { AdminService } from '../../../../services/adminService';
 import { animalCreateModel } from '../../../../models/animalCreateModel';
 
@@ -8,7 +8,9 @@ import { animalCreateModel } from '../../../../models/animalCreateModel';
   styleUrl: './animal-create.component.scss'
 })
 export class AnimalCreateComponent  {
-  constructor(private adminService: AdminService
+  @Output() animalCreated = new EventEmitter<void>();
+  constructor(private adminService: AdminService,
+    
   ) { }
 
   animal: animalCreateModel = new animalCreateModel();
@@ -22,30 +24,41 @@ export class AnimalCreateComponent  {
 
 
 
-  selectedFiles: File[] = [];
-
-onCreate() {
-  this.formData = new FormData();
-  this.formData.append("Name", this.animal.name);
-  this.formData.append("Description", this.animal.description);
-  this.formData.append("Age", this.animal.age.toString());
-  this.formData.append("Breed", this.animal.breed);
-
-  if (this.selectedFiles.length > 0) {
-    for (let i = 0; i < this.selectedFiles.length; i++) {
-      this.formData.append('Images', this.selectedFiles[i]);
+  onCreate() {
+    if (!this.animal.name || !this.animal.breed || !this.animal.age) {
+      
+      alert("Please fill in all fields.");
+      return;
     }
+    if(!this.selectedFile){
+      alert("Choose a photo")
+    }
+    this.formData = new FormData();
+    this.formData.append("Name", this.animal.name);
+    this.formData.append("Description", this.animal.description);
+    this.formData.append("Age", this.animal.age.toString());
+    this.formData.append("Breed", this.animal.breed);
+    
+    if (this.selectedFile) 
+      this.formData.append('Image', this.selectedFile);
+
+    
+  
+  
+    this.adminService.createAnimal(this.formData).subscribe(
+      () => {
+        console.log("Created")
+        this.animalCreated.emit();
+        this.resetForm();
+      },
+     
+    );
   }
-
-  this.adminService.createAnimal(this.formData).subscribe(
-    () => {
-      console.log("Created");
-    },
-    (error) => {
-      console.error(error);
-    }
-  );
-}
+  resetForm() {
+    this.animal = new animalCreateModel();
+    this.selectedFile = null;
+    (document.getElementById('file-upload') as HTMLInputElement).value = '';
+  }
 
 onFileChange(event: any) {
   this.selectedFiles = event.target.files;

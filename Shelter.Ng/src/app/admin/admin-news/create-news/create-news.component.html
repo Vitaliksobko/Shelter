@@ -1,42 +1,22 @@
-<body>
-    <div class="container">
-      <div class="container-md">
-        <div class="header mb-4">
-          <span class="h4">Create News</span>
-        </div>
-        <form>
-          <div class="mb-3">
-            <label for="Name" class="form-label">Image:</label>
-            <div class="d-flex align-items-center">
-              <img src="trustPath" alt="" class="img-thumbnail me-3" style="max-width: 100px;">
-              <input type="file" name="image" class="form-control" (change)="onFileChange($event)" id="image">
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="title" class="form-label">title:</label>
-            <input type="text" name="title" class="form-control" id="title" [(ngModel)]="news.title">
-          </div>
-          <div class="mb-3">
-            <label for="content" class="form-label">content:</label>
-            <textarea name="content" class="form-control" id="content" [(ngModel)]="news.content"></textarea>
-          </div>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="summary" class="form-label">summary:</label>
-              <input type="text" name="summary" class="form-control" id="summary" [(ngModel)]="news.summary">
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="author" class="form-label">author:</label>
-              <input type="text" name="author" class="form-control" id="author" [(ngModel)]="news.author">
-            </div>
-          </div>
-          
-          <div class="btns">
-            <button type="submit" name="stage7" class="btn btn-primary me-2" [routerLink]="['/admin-news']" (click)="onCreate()">Submit</button>
-            <button class="btn btn-secondary" [routerLink]="['/admin-product']">Back</button>
-          </div>
-        </form>
-       
-      </div>
+<div class="main-box">
+  <div class="title">
+    <span>Create news</span>
+  </div>
+  <div class="input">
+    <input type="text" placeholder="Title"[(ngModel)]="news.title">
+    <input type="text" placeholder="Author" [(ngModel)]="news.author" >
+  </div>
+  <textarea name="description" placeholder="content" [(ngModel)]="news.content"></textarea>
+  <div class="input">
+    <input type="text" placeholder="Summary" [(ngModel)]="news.summary">
+    <div>
+      <label for="file-upload" class="custom-file-upload">
+        Upload photo
+    </label>
+    <input id="file-upload" type="file" (change)="onFileChange($event)">
     </div>
-  </body>
+   
+  </div>
+  <button (click)="onCreate()">Create</button>
+  <button [routerLink]="'/admin'">Back</button>
+</div>
