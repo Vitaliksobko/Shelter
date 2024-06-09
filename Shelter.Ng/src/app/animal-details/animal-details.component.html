@@ -29,7 +29,9 @@
         </div>
       </div>
       <div *ngIf="animal" class="col-md-6">
-        <img [src]="animal.image" alt="Product Image" class="img-fluid">
+        <div *ngFor="let image of animal.images" class="card mb-4">
+          <img [src]="image" class="card-img-top" alt="{{ animal.name }}">
+        </div>
       </div>
     </div>
     <div class="row mt-3">

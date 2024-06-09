@@ -6,7 +6,7 @@ import { Observable } from "rxjs";
 export class QuestionService {
   constructor(private client: HttpClient) { }
 
-  createQuestion(userId: string, createQuestion: FormData): Observable<any> {
+  createQuestion(createQuestion: FormData): Observable<any> {
     return this.client.post('api/question', createQuestion);
   }
 }

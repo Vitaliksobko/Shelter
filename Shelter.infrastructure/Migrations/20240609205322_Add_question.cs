@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Shelter.infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class images : Migration
+    public partial class Add_question : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -23,6 +23,10 @@ namespace Shelter.infrastructure.Migrations
                 keyColumn: "Id",
                 keyValue: new Guid("9974388e-e1f7-4d52-9c49-0c36e5343810"));
 
+            migrationBuilder.DropColumn(
+                name: "Image",
+                table: "Animals");
+
             migrationBuilder.AddColumn<string[]>(
                 name: "Images",
                 table: "Animals",
@@ -30,32 +34,59 @@ namespace Shelter.infrastructure.Migrations
                 nullable: false,
                 defaultValue: new string[0]);
 
+            migrationBuilder.CreateTable(
+                name: "Questions",
+                columns: table => new
+                {
+                    QuestionId = table.Column<Guid>(type: "uuid", nullable: false),
+                    FirstName = table.Column<string>(type: "text", nullable: false),
+                    SecondName = table.Column<string>(type: "text", nullable: false),
+                    Email = table.Column<string>(type: "text", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "text", nullable: false),
+                    UserQuestion = table.Column<string>(type: "text", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Questions", x => x.QuestionId);
+                });
+
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { new Guid("e567dd1d-adec-4f77-9a37-8bb6e8ca3282"), null, "User", "USER" },
-                    { new Guid("e72c30fa-3ccf-4691-b57a-71ae9965ff74"), null, "Admin", "ADMIN" }
+                    { new Guid("a6d366d9-21ce-446f-b895-7d9e5ed5b435"), null, "Admin", "ADMIN" },
+                    { new Guid("f4b3a25d-902e-4b0f-883c-5459d53c9059"), null, "User", "USER" }
                 });
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DeleteData(
-                table: "AspNetRoles",
-                keyColumn: "Id",
-                keyValue: new Guid("e567dd1d-adec-4f77-9a37-8bb6e8ca3282"));
+            migrationBuilder.DropTable(
+                name: "Questions");
 
             migrationBuilder.DeleteData(
                 table: "AspNetRoles",
                 keyColumn: "Id",
-                keyValue: new Guid("e72c30fa-3ccf-4691-b57a-71ae9965ff74"));
+                keyValue: new Guid("a6d366d9-21ce-446f-b895-7d9e5ed5b435"));
+
+            migrationBuilder.DeleteData(
+                table: "AspNetRoles",
+                keyColumn: "Id",
+                keyValue: new Guid("f4b3a25d-902e-4b0f-883c-5459d53c9059"));
 
             migrationBuilder.DropColumn(
                 name: "Images",
                 table: "Animals");
+
+            migrationBuilder.AddColumn<string>(
+                name: "Image",
+                table: "Animals",
+                type: "text",
+                nullable: false,
+                defaultValue: "");
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",

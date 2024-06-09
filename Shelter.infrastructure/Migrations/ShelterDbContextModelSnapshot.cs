@@ -213,6 +213,40 @@ namespace Shelter.infrastructure.Migrations
                     b.ToTable("News");
                 });
 
+            modelBuilder.Entity("Shelter.Core.Models.Question", b =>
+                {
+                    b.Property<Guid>("QuestionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SecondName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("UserQuestion")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("QuestionId");
+
+                    b.ToTable("Questions");
+                });
+
             modelBuilder.Entity("Shelter.Core.Models.Role", b =>
                 {
                     b.Property<Guid>("Id")
@@ -242,13 +276,13 @@ namespace Shelter.infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("6e4cea63-919b-4c63-b222-d335c0a5d1fb"),
+                            Id = new Guid("f4b3a25d-902e-4b0f-883c-5459d53c9059"),
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = new Guid("6ff9d5b7-2ea9-4be3-8dd0-36c602da1ddf"),
+                            Id = new Guid("a6d366d9-21ce-446f-b895-7d9e5ed5b435"),
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

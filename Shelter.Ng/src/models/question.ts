@@ -5,6 +5,6 @@ export class Question {
     firstName : string = '';
     secondName : string = '';
     userQuestion : string = '';
-    
+    userId : string = '';
 
 }

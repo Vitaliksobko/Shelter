@@ -2,20 +2,17 @@ import { Component } from '@angular/core';
 import { Question } from '../../models/question';
 import { QuestionService } from '../../services/questionService';
 import { LocalService } from '../../services/localService';
+import { User } from '../../models/user';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  styleUrls: ['./about.component.scss'] // Corrected from styleUrl to styleUrls
 })
 export class AboutComponent {
   question: Question = new Question();
   formData = new FormData();
-  email: string = '';
-  phoneNumber: string = '';
-  firstName: string = '';
-  secondName: string = '';
-  userQuestion: string = '';
+  user?: User;
 
   constructor(private questionService: QuestionService, private localService: LocalService) { }
 
@@ -27,14 +24,20 @@ export class AboutComponent {
     this.formData.append('FirstName', this.question.firstName);
     this.formData.append('SecondName', this.question.secondName);
     this.formData.append('UserQuestion', this.question.userQuestion);
+    this.formData.append('UserId', userId); // Using userId obtained from localService
 
-    this.questionService.createQuestion(userId, this.formData).subscribe(
+    this.questionService.createQuestion(this.formData).subscribe(
       () => {
-        console.log("Created");
+        alert("Питання відправлене");
+        this.clearForm();
       },
       (error) => {
         console.error(error);
       }
     );
+  }
+
+  clearForm() {
+    this.question = new Question();
   }
 }

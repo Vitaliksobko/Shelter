@@ -8,7 +8,8 @@ public class UnitOfWork(
     Lazy<IUserRepository> userRepository,
     Lazy<IAnimalRepository> animalRepository,
     Lazy<IBookingRepository> bookingRepository,
-    Lazy<INewsRepository> newsRepository) : IUnitOfWork
+    Lazy<INewsRepository> newsRepository,
+    Lazy<IQuestionRepository> questionRepository) : IUnitOfWork
 {
     
 
@@ -19,5 +20,7 @@ public class UnitOfWork(
     public INewsRepository News => newsRepository.Value;
 
     public IBookingRepository Booking => bookingRepository.Value;
+    
+    public IQuestionRepository Question => questionRepository.Value;
     public async Task SaveAsync() => await  context.SaveChangesAsync();
 }

@@ -14,6 +14,8 @@ public class ShelterDbContext : IdentityDbContext<User, Role, Guid>
     
     public DbSet<News> News { get; set; }
     
+    public DbSet<Question> Questions { get; set; }
+    
     public ShelterDbContext(DbContextOptions<ShelterDbContext> options) : base(options)
     {
         
