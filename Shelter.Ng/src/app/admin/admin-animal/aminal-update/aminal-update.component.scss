@@ -1,0 +1,102 @@
+.main-box{
+    position:fixed;
+    width: 100%;
+    height: 91vh;
+    background-color: #CCCC;
+
+}
+.content{
+    width: 80%;
+    height: 55%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;  
+    margin-top: 150px;  
+    background-color: white;
+}
+textarea{
+    width: 400px;
+    max-width: 400px;
+    height: 180px;
+    max-height: 180px;
+}
+.inputs{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.inputs div{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+}
+.area{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    margin-top: 50px;
+}
+input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid black;
+    color: black;
+}
+span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.img{
+    width: 300px;
+    height: 355px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+
+}
+
+.custom-file-upload {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    padding: 10px 22px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+#file-upload {
+    display: none;
+}
+button{
+    width: 250px;
+    margin: auto;
+    border: none;
+    background: black;
+    color: white;
+    font-size:18px;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 22px;
+   
+}
+.area button{
+    margin-top: 60px;
+    margin-left: 80px;
+}
+.inputs button{
+    margin-top: 50px;
+    margin-left: 40px;
+}

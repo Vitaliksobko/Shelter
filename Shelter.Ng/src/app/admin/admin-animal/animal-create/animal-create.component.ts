@@ -5,62 +5,62 @@ import { animalCreateModel } from '../../../../models/animalCreateModel';
 @Component({
   selector: 'app-animal-create',
   templateUrl: './animal-create.component.html',
-  styleUrl: './animal-create.component.scss'
+  styleUrls: ['./animal-create.component.scss']
 })
-export class AnimalCreateComponent  {
+export class AnimalCreateComponent {
   @Output() animalCreated = new EventEmitter<void>();
-  constructor(private adminService: AdminService,
-    
-  ) { }
 
   animal: animalCreateModel = new animalCreateModel();
   formData = new FormData();
-  name : string = '';
-  description : string = '';
-  age : number = 0;
-  breed : string = '';
-  image: string | null = '';
   selectedFile: File | null = null;
 
-
+  constructor(private adminService: AdminService) { }
 
   onCreate() {
     if (!this.animal.name || !this.animal.breed || !this.animal.age) {
-      
       alert("Please fill in all fields.");
       return;
     }
-    if(!this.selectedFile){
-      alert("Choose a photo")
+    if (this.animal.age < 0) {
+      alert("Age cannot be a negative number.");
+      return;
     }
+    if (!this.selectedFile) {
+      alert("Choose a photo");
+      return;
+    }
+
     this.formData = new FormData();
     this.formData.append("Name", this.animal.name);
     this.formData.append("Description", this.animal.description);
     this.formData.append("Age", this.animal.age.toString());
     this.formData.append("Breed", this.animal.breed);
-    
-    if (this.selectedFile) 
-      this.formData.append('Image', this.selectedFile);
+    this.formData.append('Images', this.selectedFile);
 
-    
-  
-  
     this.adminService.createAnimal(this.formData).subscribe(
       () => {
-        console.log("Created")
+        console.log("Created");
         this.animalCreated.emit();
         this.resetForm();
       },
-     
+      (error: any) => {
+        console.error("Error:", error);
+        if (error.status === 400) {
+          alert("Bad Request: Please check your form data.");
+        } else {
+          alert(`Error: ${error.message}`);
+        }
+      }
     );
   }
+
   resetForm() {
     this.animal = new animalCreateModel();
     this.selectedFile = null;
     (document.getElementById('file-upload') as HTMLInputElement).value = '';
   }
 
-onFileChange(event: any) {
-  this.selectedFiles = event.target.files;
-}
+  onFileChange(event: any) {
+    this.selectedFile = event.target.files[0];
+  }
 }

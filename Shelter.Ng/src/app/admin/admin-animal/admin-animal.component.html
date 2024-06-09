@@ -4,7 +4,7 @@
       <div class="animal" *ngFor="let animal of animals">
         <div class="profile">
           <div class="img">
-            <img [src]="animal.image" alt="">
+            <img [src]="animal.images" alt="">
           </div>
           <div class="details">
             <div class="main-fact">
@@ -24,7 +24,7 @@
               <span>{{animal.description}}</span>
             </div>
             <div class="btnn">
-              <button>Edit</button>
+              <button [routerLink]="'/admin-animal/edit-animal'">Edit</button>
               <button (click)="delete(animal.animalId)">Delete</button>
             </div>
           </div>

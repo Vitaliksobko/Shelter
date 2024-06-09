@@ -7,7 +7,7 @@
     height: 550px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;    margin-left: 70px;
     // background-color: #dde1ed;
-    background-color: #abafb4;
+    background-color: #94b0b7;
     border-radius: 10px;
 }
 .input{
@@ -33,7 +33,7 @@ input{
     font-family: 'Montserrat', sans-serif;
     border-bottom: 1px solid black;
     color: black;
-    background-color: #abafb4;
+    background-color: #94b0b7;
 }
 .custom-file-upload {
     display: inline-block;
@@ -57,11 +57,12 @@ textarea{
     max-height: 200px;
     min-height: 100px;
     margin-left: 25px;
-    background-color: #abafb4;
+    background-color: #94b0b7;
     outline:  none;
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
+    font-size: 25px;
 }
 ::placeholder{
     color: black;

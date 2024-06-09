@@ -17,6 +17,7 @@ export class AdminAnimalComponent  implements OnInit{
 
   ngOnInit(): void {
     this.getAnimals();
+   
   }
   ngAfterViewInit(): void {
     this.animalCreateComponent.animalCreated.subscribe(() => {
