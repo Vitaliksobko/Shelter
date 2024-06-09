@@ -1,42 +1,36 @@
-<body>
-    <div class="books">
-      <span>Product:</span>
-      <div class="container">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Number</th>
-              <th scope="col">Image</th>
-              <th scope="col">Name</th>
-              <th scope="col">Description</th>
-              <th scope="col">Breed</th>
-              <th scope="col">Age</th>
-              <th scope="col">Actions</th>
-              <th scope="col"><button class="btn btn-dark" [routerLink]="'create-animal/'">Add</button></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let animal of animals; let i = index">
-              <td>{{ i + 1 }}</td>
-              <td>
-              
-                <div  class="image-container" *ngFor="let image of animal.images">
-                  <img [src]="image" alt="{{animal.name}}" class="product-image">
+<div class="main-box">
+  <div class="content">
+    <div class="animals-box">
+      <div class="animal" *ngFor="let animal of animals">
+        <div class="profile">
+          <div class="img">
+            <img [src]="animal.images" alt="">
+          </div>
+          <div class="details">
+            <div class="main-fact">
+              <div>
+                <span>Name:</span>
+                <span>Breed:</span>
+                <span>Age:</span>
               </div>
-              </td>
-              <td>{{animal.name}}</td>
-              <td>{{animal.description}}</td>
-              <td>{{animal.breed}}</td>
-              <td>{{animal.age}}</td>
-              
-              <td><button class="btn btn-warning">Edit</button></td>
-              <td><button class="btn btn-danger" (click)="delete(animal.animalId)" >Delete</button></td>
-             
-              
-            </tr>
-          </tbody>
-        </table>
-        <button class="btn btn-dark" [routerLink]="'/admin'">Back</button>
+              <div>
+                <span>{{animal.name}}</span>
+                <span>{{animal.breed}}</span>
+                <span>{{animal.age}}</span>
+              </div>
+            </div>
+            <div class="description">
+              <span>Description:</span>
+              <span>{{animal.description}}</span>
+            </div>
+            <div class="btnn">
+              <button [routerLink]="'/admin-animal/edit-animal'">Edit</button>
+              <button (click)="delete(animal.animalId)">Delete</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+    <app-animal-create></app-animal-create>
+  </div>
+</div>

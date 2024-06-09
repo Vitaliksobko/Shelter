@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { NewsService } from '../../../../services/newsService';
 import { NewsCreateModel } from '../../../../models/newsCreateModel';
 
@@ -8,6 +8,7 @@ import { NewsCreateModel } from '../../../../models/newsCreateModel';
   styleUrl: './create-news.component.scss'
 })
 export class CreateNewsComponent  {
+  @Output() newsCreated = new EventEmitter<void>();
   constructor(private newsService: NewsService
   ) { }
 
@@ -22,8 +23,16 @@ export class CreateNewsComponent  {
 
 
 
-
+  
   onCreate() {
+    if (!this.news.title || !this.news.author || !this.news.summary || !this.news.content) {
+      alert("Please fill in all fields.");
+      return;
+    }
+    if (!this.selectedFile) {
+      alert("Choose a photo");
+      return
+    }
     this.formData = new FormData();
     this.formData.append("Title", this.news.title);
     this.formData.append("Content", this.news.content);
@@ -39,7 +48,7 @@ export class CreateNewsComponent  {
     this.newsService.createNews(this.formData).subscribe(
       () => {
         console.log("Created")
-
+        this.newsCreated.emit();
       },
      
     );

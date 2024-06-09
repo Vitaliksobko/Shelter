@@ -1,41 +1,27 @@
-<body>
-    <div class="books">
-      <span>news:</span>
-      <div class="container">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Number</th>
-              <th scope="col">Image</th>
-              <th scope="col">title</th>
-              <th scope="col">content</th>
-              <th scope="col">summary</th>
-              <th scope="col">author</th>
-              <th scope="col">Actions</th>
-              <th scope="col"><button class="btn btn-dark" [routerLink]="'create-news/'">Add</button></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let new of news; let i = index">
-              <td>{{ i + 1 }}</td>
-              <td>
-                <div class="image-container">
-                  <img [src]="new.image" alt="" class="product-image">
-                </div>
-              </td>
-              <td>{{new.title}}</td>
-              <td>{{new.content}}</td>
-              <td>{{new.summary}}</td>
-              <td>{{new.author}}</td>
-              
-              
-              <td><button class="btn btn-warning">Edit</button></td>
-              <td><button class="btn btn-danger"(click)="delete(new.newsId)" >Delete</button></td>
-              
-            </tr>
-          </tbody>
-        </table>
-        <button class="btn btn-dark" [routerLink]="'/admin'">Back</button>
+<div class="main-box">
+  <div class="content">
+    <div class="news-box" >
+      <div class="news" *ngFor="let new of news">
+        <div class="profile">
+          <div class="img">
+            <img [src]="new.image" alt="">
+          </div>
+          <div class="details">
+            <div class="main-fact">
+              <div>
+                <span>{{new.title}}</span>
+                <span>{{new.content}}</span>
+                <span>{{new.summary}}</span>
+                <span>Author: {{new.author}}</span>
+              </div>
+            </div>
+            <div class="btnn">
+              <button [routerLink]="'/admin-animal/edit-news'">Edit</button>
+              <button (click)="delete(new.newsId)">Delete</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+    <app-create-news></app-create-news>
+</div>

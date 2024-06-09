@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Animal } from '../../../models/animal';
 import { AdminService } from '../../../services/adminService';
 import { LocalService } from '../../../services/localService';
+import { AnimalCreateComponent } from './animal-create/animal-create.component';
 
 @Component({
   selector: 'app-admin-animal',
@@ -9,12 +10,19 @@ import { LocalService } from '../../../services/localService';
   styleUrl: './admin-animal.component.scss'
 })
 export class AdminAnimalComponent  implements OnInit{
+  @ViewChild(AnimalCreateComponent) animalCreateComponent!: AnimalCreateComponent;
   animals: Animal[] = [];
   errorMessage: string = '';
   constructor(private adminService : AdminService, private localService: LocalService) { }
 
   ngOnInit(): void {
     this.getAnimals();
+   
+  }
+  ngAfterViewInit(): void {
+    this.animalCreateComponent.animalCreated.subscribe(() => {
+      this.getAnimals(); 
+    });
   }
 
   getAnimals(): void {
@@ -28,6 +36,7 @@ export class AdminAnimalComponent  implements OnInit{
         console.log('product deleted successfully');
         this.adminService.getAnimals().subscribe(data => {
           this.animals = data;
+          this.getAnimals(); 
         });
       },
       

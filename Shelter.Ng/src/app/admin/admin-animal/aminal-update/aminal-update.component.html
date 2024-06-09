@@ -1,1 +1,35 @@
-<p>aminal-update works!</p>
+<div class="main-box">
+    <div class="content">
+        <div class="img">
+            <img src="../../../../assets/cat_1.webp" alt="">
+            <div>
+                <label for="file-upload" class="custom-file-upload">
+                  Upload photo
+              </label>
+              <input id="file-upload" type="file">
+              </div>
+        </div>
+        <div class="inputs">
+            <div>
+                <span>Name</span>
+                <input type="text" placeholder="Name">
+            </div>
+            <div>
+                <span>bread</span>
+                <input type="text" placeholder="Bread">
+            </div>
+            <div>
+                <span>Age</span>
+                <input type="number" placeholder="Age">
+            </div>
+            <button>Edit</button>
+        
+        </div>
+        <div class="area">
+            <span>Desciption</span>
+            <textarea></textarea>
+            <button [routerLink]="'/admin-animal'">Back</button>
+        </div>
+        
+    </div>
+</div>

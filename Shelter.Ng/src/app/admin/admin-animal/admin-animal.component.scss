@@ -1,68 +1,80 @@
-.books {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .container {
-    width: 80%;
-  }
-  
-  .table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #e6e6e6;
-  }
-  
-  .btn {
-    margin-right: 5px;
-  }
-  
-  .btn-dark {
-    background-color: #343a40;
-    color: white;
-  }
-  
-  .btn-warning {
-    background-color: #ffc107;
-    color: black;
-  }
-  
-  .btn-danger {
-    background-color: #dc3545;
-    color: white;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-  body{
-    padding-bottom: 100px;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/011/813/624/non_2x/retro-distressed-texture-free-vector.jpg");
-}
-
-.image-container {
-  width: 100px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
-  overflow: hidden;
-}
-
-.product-image {
+.main-box{
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
+  min-height: 91vh;
+  background-color: #cdd5db;
+}
+.content{
+  width: 100%;
+  min-height: 91vh;
+  display: flex;
+  flex-direction: row;
+}
+.animals-box{
+  width: 50%;
   height: auto;
+}
+.animal{
+  width: 100%;
+  min-height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: #3c3e44;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.profile{
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.img img{
+  width: 300px;
+  height: 300px;
+  object-fit:cover;
+}
+.main-fact div{
+  width: 200px;
+  display:  flex;
+  flex-direction: column;
+  font-size: 22px;
+
+}
+.main-fact{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.description{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: auto;
+  font-size: 18px;
+  margin-left: 10px;
+}
+button{
+  width: 140px;
+  height: 40px;
+  margin: auto;
+  border: none;
+  background: #f6f2ee;
+  color: #242e25;
+  font-size:18px;
+  border-radius: 30px;
+  outline: none;
+  margin-top: 10px;
+}
+.btnn{
+  border: none;
+  width: 450px;
+  display:  flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }

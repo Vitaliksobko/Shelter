@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { News } from '../../../models/news';
 import { NewsService } from '../../../services/newsService';
 import { LocalService } from '../../../services/localService';
+import { CreateNewsComponent } from './create-news/create-news.component';
 
 @Component({
   selector: 'app-admin-news',
@@ -9,12 +10,18 @@ import { LocalService } from '../../../services/localService';
   styleUrl: './admin-news.component.scss'
 })
 export class AdminNewsComponent  implements OnInit{
+  @ViewChild(CreateNewsComponent) newsCreateComponent!: CreateNewsComponent;
   news: News[] = [];
   errorMessage: string = '';
   constructor(private newsService : NewsService, private localService: LocalService) { }
 
   ngOnInit(): void {
     this.getNews();
+  }
+  ngAfterViewInit(): void {
+    this.newsCreateComponent.newsCreated.subscribe(() => {
+      this.getNews(); 
+    });
   }
 
   getNews(): void {

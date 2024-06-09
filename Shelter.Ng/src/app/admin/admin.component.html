@@ -1,12 +1,22 @@
-<div class="container d-flex justify-content-center align-items-center">
-    <div class="users m-5">
-        <button class="btn btn-dark" [routerLink]="'/admin-user'">Users</button>
+<div class="main-box">
+    <div class="categories">
+        <div class="animal">
+            <img src="../../assets/Chris Chatterton - Illustrator & Author - Dog.jpg" alt="">
+            <span class="title">Animals</span>
+            <span class="descruption">View,add,edit information about animals in our shelter</span>
+            <button [routerLink]="'/admin-animal'">click</button>
+        </div>
+        <div class="users">
+            <img src="../../assets/photo_people.jpg" alt="">
+            <span class="title">Users</span>
+            <span class="descruption">View information about registered users</span>
+            <button [routerLink]="'/admin-user'" >click</button>
+        </div>
+        <div class="news">
+            <img src="../../assets/photo_news.jpg" alt="">
+            <span class="title">News</span>
+            <span class="descruption">View,add,edit news about our shelter</span>
+            <button  [routerLink]="'/admin-news'" >click</button>
+        </div>
     </div>
-    <div class="books m-5">
-        <button class="btn btn-dark" [routerLink]="'/admin-news'">News</button>
-    </div>
-    <div class="authors m-5">
-        <button class="btn btn-dark" [routerLink]="'/admin-animal'">Animal</button>
-    </div>
-   
 </div>
