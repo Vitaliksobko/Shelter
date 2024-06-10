@@ -1,26 +1,40 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+  rel="stylesheet"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+/>
 <body>
-    <div class="container">
-      <h2>Тваринки в притулку</h2>
-      <div class="row">
-        <div *ngFor="let animal of animals" class="col-md-4 mb-4">
-          <div class="card h-100 product-card" [routerLink]="'/currentanimal/' + animal.animalId">
-            <div *ngFor="let image of animal.images" class="card mb-4">
-              <img [src]="image" class="card-img-top" alt="{{ animal.name }}">
-              <div  class="card-body" >
-                <h5 class="card-title">Name: {{ animal.name }}</h5>
-                <div class="d-flex justify-content-between">
-                  <p class="mb-0">Breed: {{ animal.breed }}</p>
-                </div>
-                <h5 class="card-title">Age:{{ animal.age }}</h5>
-              </div>
+  <div class="container">
+    <h2 class="animal_title">Тваринки в притулку</h2>
+    <div class="grid-temp">
+      <div *ngFor="let animal of animals" class="animal_container">
+        <main>
+          <div *ngFor="let image of animal.images" class="card">
+            <img [src]="image" class="card-img-top" alt="{{ animal.name }}" />
+            <div class="card-content">
+              <h2>Name: {{ animal.name }}</h2>
+              <p>
+                Breed: {{ animal.breed }}<br />
+                Age: {{ animal.age }}
+                {{ animal.description }}
+              </p>
+              <a
+                class="button"
+                [routerLink]="'/currentanimal/' + animal.animalId"
+              >
+                More info<span class="material-symbols-outlined">
+                  arrow_right_alt
+                </span>
+              </a>
             </div>
-            <p class="card-text">{{ animal.description }}</p>
           </div>
-         
-        </div>
+        </main>
       </div>
     </div>
-  </body>
-  
-
-
+  </div>
+</body>

@@ -3,12 +3,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2b2a2a;
+    background-color: white;
     padding: 10px;
     padding-left: 20px;
+    position: relative;
+    z-index: 9999;
   }
   .header-catalog{
-    
+
+  }
+  .header-logo
+  {
+    height: 50px;
   }
 
   .header-button{
@@ -16,51 +22,69 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 60px;
-    background-color: #e00027;
+    background-color:  rgb(115, 216, 231);
     border-radius: 5px;
     font-weight: bold;
+    font-family: "Russo One";
     color: white;
     transition: background-color 0.3s, color 0.3s;
     border-color: none;
     text-decoration: none;
+    letter-spacing: 2px;
   }
   .header-button:hover{
-    background-color: #f97988;
+    background-color: white;
+    color:  rgb(115, 216, 231);
+    border: 1px solid  rgb(115, 216, 231);;
     text-decoration: none;
 
   }
-  
+
   .header-left {
     margin-left: 180px;
+    display: flex;
+    align-items: center;
   }
-  
-  .header-center {
-    /* Стилі для центральної частини хедера */
-  }
-  
+
   .header-center input {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
   }
-  
+
   .header-right button {
     margin-left: 20px;
-    margin-right: 40px; /* Додайте відстань між кнопками */
+    margin-right: 40px;
+    background-color: white;
+    color:  rgb(115, 216, 231);
+    border: 2px solid  rgb(115, 216, 231);
+    text-decoration: none;
+    font-family: "Russo One";
   }
-  
+  .header-right button:hover
+  {
+    background-color: rgb(115, 216, 231);
+    color: #fff;
+    transition: 0.3s;
+  }
+
   .header-right ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  
+
   .header-right li {
     margin-left: 20px;
-    
+
   }
-  
+  .header-title
+  {
+    color: rgb(115, 216, 231);
+    font-size: 22px;
+    font-family: 'Russo One', sans-serif;
+  }
   .header-right a {
     text-decoration: none;
     color: #ffffff;
@@ -72,10 +96,11 @@ header {
     margin: 0;
     padding: 0;
   }
-  
+
   /* Стилі для хедера */
   header {
-    background-color: #333;
+    background-color: white;
+    border-bottom: 2px solid rgb(115, 216, 231);
     color: #fff;
     padding: 10px;
     margin: 0;
@@ -87,5 +112,5 @@ header {
     color: #fff;
     text-decoration: none;
     margin-right: 10px;
-   
+
   }
