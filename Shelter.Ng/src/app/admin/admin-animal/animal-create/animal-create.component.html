@@ -1,22 +1,46 @@
-<div class="main-box">
-  <div class="title">
-    <span>Create an animal card</span>
-  </div>
-  <div class="input">
-    <input type="text" placeholder="Name" [(ngModel)]="animal.name">
-    <input type="text" placeholder="Breed" [(ngModel)]="animal.breed">
-  </div>
-  <div class="input">
-    <input type="number" placeholder="Age" [(ngModel)]="animal.age">
-    <div>
-      <label for="file-upload" class="custom-file-upload">
-        Upload photo
-    </label>
-    <input id="file-upload" type="file" (change)="onFileChange($event)">
+<body>
+    <div class="container">
+      <div class="container-md">
+        <div class="header mb-4">
+          <span class="h4">Create Product</span>
+        </div>
+        <form>
+          <div class="mb-3">
+            <label for="Name" class="form-label">Image:</label>
+            <div class="mb-3">
+              <label for="images" class="form-label">Images:</label>
+              <input type="file" name="images" class="form-control" (change)="onFileChange($event)" id="images" multiple="multiple">
+             
+            </div>
+
+            
+            
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" name="name" class="form-control" id="name" [(ngModel)]="animal.name">
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description:</label>
+            <textarea name="description" class="form-control" id="description" rows="3" [(ngModel)]="animal.description"></textarea>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="age" class="form-label">age:</label>
+              <input type="number" name="age" class="form-control" id="age" [(ngModel)]="animal.age">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="breed" class="form-label">breed:</label>
+              <input type="text" name="breed" class="form-control" id="breed" [(ngModel)]="animal.breed">
+            </div>
+          </div>
+          
+          <div class="btns">
+            <button type="submit" name="stage7" [routerLink]="['/admin-animal']" class="btn btn-primary me-2"  (click)="onCreate()">Submit</button>
+            <button class="btn btn-secondary" [routerLink]="['/admin-animal']">Back</button>
+          </div>
+        </form>
+       
+      </div>
     </div>
-   
-  </div>
-  <textarea name="description" placeholder="Description" [(ngModel)]="animal.description"></textarea>
-  <button (click)="onCreate()">Create</button>
-  <button [routerLink]="'/admin'">Back</button>
-</div>
+  </body>

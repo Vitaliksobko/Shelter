@@ -1,1 +1,235 @@
-<p>Домашння сторінка тут статична інфа</p>
+<head>
+  <meta charset="UTF-8" />
+  <title>CodePen - component ui: accordion / collapse with pure CSS</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+  />
+</head>
+<body>
+  <div class="main-page">
+    <h1 class="main-slogan">
+      Doggy Tail - the place where everybody is loved!<img
+        style="width: 50px"
+        src="/assets/clean.png"
+      />
+    </h1>
+    <p class="add-text">
+      To have access to additional functions - you should be registered!
+    </p>
+    <div class="buttons-cont">
+      <button class="btn btn-dark" routerLink="/login">Login</button>
+      <button class="btn btn-dark" routerLink="/registration">Register</button>
+    </div>
+  </div>
+  <div class="sec_block">
+    <h3>Doggy Tail</h3>
+    <p>
+      For people who work at the Doggy Tail, rescuing animals is not an ordinary
+      routine job. This is their lifestyle, outlook, habit, dream and meaning.
+    </p>
+
+    <div class="first_cont">
+      <div>
+        <img class="" src="assets/dog.png" />
+        <p>We save animals</p>
+      </div>
+      <div>
+        <img src="assets/dog (1).png" />
+        <p>We take care</p>
+      </div>
+      <div>
+        <img src="assets/pawprint.png" />
+        <p>We sterilize</p>
+      </div>
+      <div>
+        <img src="assets/sleep.png" />
+        <p>We treat</p>
+      </div>
+      <div>
+        <img src="assets/pet-food.png" />
+        <p>We feed</p>
+      </div>
+      <div>
+        <img src="assets/love.png" />
+        <p>We are adjusting</p>
+      </div>
+    </div>
+    <div class="accordion_inline">
+      <div class="main_title">How can you help us?</div>
+      <div class="accordion">
+        <img class="accordion_image" src="assets/cute.jpg" />
+        <div class="wrapper">
+          <input
+            type="radio"
+            id="radioYour Account"
+            name="accordion"
+            checked="checked"
+          />
+          <label class="item" for="radioYour Account">
+            <div class="title">What feed to buy for animals?</div>
+            <div class="content">
+              Choosing feed for animals can seem like a difficult task, because
+              there are many different options on the market. To make the right
+              choice, it is important to consider several factors.
+            </div>
+          </label>
+          <input
+            type="radio"
+            id="radioPayment &amp; Pricing"
+            name="accordion"
+          />
+          <label class="item" for="radioPayment &amp; Pricing">
+            <div class="title">How can I help without money?</div>
+            <div class="content">
+              <ul>
+                <li>
+                  Take a dog walk. This is a great way to give animals a little
+                  attention and love, as well as a little dispersal. Most
+                  shelters always need volunteers who would walk dogs.
+                </li>
+                <li>
+                  Help with animal socialization. Some animals in shelters are
+                  shy or frightening. You can help them become more socially
+                  active by spending time with them, playing with them and
+                  teaching them to the main teams.
+                </li>
+                <li>
+                  Help with cleaning and caring for animals. Shelters always
+                  need assistance in cleaning cells, washing utensils, feeding
+                  animals and other routine affairs.
+                </li>
+                <li>
+                  Give the necessary things. Shelters always need donations of
+                  food, posts, toys, bowls, floods, straps and other things. You
+                  can also contact the shelter to find out if they have any
+                  specific needs.
+                </li>
+                <li>
+                  Distribute shelter information. You can help the shelter by
+                  telling your friends, family and subscribers on social
+                  networks. The more people know about the shelter, the more
+                  likely the animals will find new homes.
+                </li>
+              </ul>
+            </div>
+          </label>
+          <input
+            type="radio"
+            id="radioReturns &amp; Refunds"
+            name="accordion"
+          />
+          <label class="item" for="radioReturns &amp; Refunds">
+            <div class="title">How can you help us in the cold season?</div>
+            <div class="content">
+              Here are some ways you can help us in the cold season: 1. Make a
+              sacrifice. Money donations allow us to buy food, medicines,
+              blankets, dog clothing and other animals needed. 2. Bring blankets
+              and dog clothing. Blankets, winter sweaters, jackets and other
+              warm things will help animals warm up on cold winter nights. 3.
+              Become a volunteer. We always need the help of volunteers who can
+              walk dogs, clean cages, feed animals and other tasks. 4. Give food
+              and other necessary things. Shelters always need donations of
+              food, posts, toys, bowls, floods, straps and other things. 5.
+              Distribute information about the shelter. The more people know
+              about our shelter, the more likely the animals will find new
+              homes. Please do not hesitate to contact us to know how you can
+              help. Together we can make the winter warmer for animals in the
+              shelter!
+            </div>
+          </label>
+          <input
+            type="radio"
+            id="radioShipping &amp; Pickup"
+            name="accordion"
+          />
+          <label class="item" for="radioShipping &amp; Pickup">
+            <div class="title">
+              How can I help the shelter find animals for animals?
+            </div>
+            <div class="content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+              aliquid harum velit sed similique exercitationem, quasi in, nulla
+              quos accusamus nemo vel dolores. Est id sint dolore, deserunt
+              dolorum accusantium.
+            </div>
+          </label>
+          <input
+            type="radio"
+            id="radioViewing &amp; Changing Orders"
+            name="accordion"
+          />
+          <label class="item" for="radioViewing &amp; Changing Orders">
+            <div class="title">Viewing &amp; Changing Orders</div>
+            <div class="content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+              aliquid harum velit sed similique exercitationem, quasi in, nulla
+              quos accusamus nemo vel dolores. Est id sint dolore, deserunt
+              dolorum accusantium.
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-sect">
+      <div class="container-form">
+        <div class="container-md">
+          <div class="header mb-4">
+            <span class="h4">Ask any questions you want</span>
+          </div>
+          <form class="main-form" #questionForm="ngForm">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phoneNumber" class="form-label">Phone Number:</label>
+              <input
+                type="tel"
+                name="phoneNumber"
+                class="form-control"
+                id="phoneNumber"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name:</label>
+              <input
+                type="text"
+                name="firstName"
+                class="form-control"
+                id="firstName"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="secondName" class="form-label">Second Name:</label>
+              <input
+                type="text"
+                name="secondName"
+                class="form-control"
+                id="secondName"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="userQuestion" class="form-label">Question:</label>
+              <textarea
+                name="userQuestion"
+                class="form-control"
+                id="userQuestion"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="btns">
+              <button type="submit" class="btn btn-submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <img class="accordion_image" src="/assets/iso.jpg" />
+    </div>
+  </div>
+</body>
