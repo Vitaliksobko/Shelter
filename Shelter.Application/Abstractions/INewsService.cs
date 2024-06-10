@@ -10,4 +10,8 @@ public interface INewsService
     Task CreateNews(CreateNewsDto createNewsDto);
 
     Task DeleteNews(Guid id);
+
+    Task<News> GetNewsById(Guid NewsId);
+
+    Task UpdateNews(UpdateNewsDto updateNewsDto);
 }

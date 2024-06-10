@@ -7,7 +7,7 @@ using Shelter.Core.Models;
 
 namespace Shelter.Application.Services;
 
-public class AnimalService(IUnitOfWork _unitOfWork, IMapper _mapper) : IAnimalService
+public class AnimalService(IFileService fileService,IUnitOfWork _unitOfWork, IMapper _mapper) : IAnimalService
 {
     public async Task<List<Animal>> GetAll()
     {
@@ -45,6 +45,36 @@ public class AnimalService(IUnitOfWork _unitOfWork, IMapper _mapper) : IAnimalSe
         await _unitOfWork.SaveAsync();
 
         return animal;
+    }
+    
+    
+    public async Task UpdateAnimal(UpdateAnimalDto updateAnimalDto)
+    {
+        var animalDto = _mapper.Map<AnimalDto>(await _unitOfWork.Animal.GetSingleByConditionAsync(
+            a => a.AnimalId == updateAnimalDto.AnimalId));
+
+        animalDto.Name = updateAnimalDto.Name;
+        animalDto.Description = updateAnimalDto.Description;
+        animalDto.Age = updateAnimalDto.Age;
+        animalDto.Breed = updateAnimalDto.Breed;
+        
+       
+        
+        
+        if (updateAnimalDto.Image == null)
+        {
+            animalDto.Image = animalDto.Image; 
+        }
+        else
+        {
+            animalDto.Image = await fileService.UploadImage(updateAnimalDto.Image);
+        }
+        
+
+        _unitOfWork.Animal.Update(_mapper.Map<Animal>(animalDto));
+        await _unitOfWork.SaveAsync();
+
+        
     }
 
 

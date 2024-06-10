@@ -28,6 +28,8 @@ export class TopMenuComponent  implements OnInit {
       let role = this.localService.get(LocalService.AuthRole);
       if (role === 'Admin') {
         this.isAdmin = true;
+      }else {
+        this.isAdmin = false;
       }
     }
   }

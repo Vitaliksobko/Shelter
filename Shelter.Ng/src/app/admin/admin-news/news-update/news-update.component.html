@@ -1,35 +1,33 @@
 <div class="main-box">
     <div class="content">
         <div class="img">
-            <img src="../../../../assets/cat_1.webp" alt="">
+            <img [src]="selectedImageBase64 || (news.image ? news.image : '../../../../assets/cat_1.webp')" alt="">
             <div>
                 <label for="file-upload" class="custom-file-upload">
                   Upload photo
               </label>
-              <input id="file-upload" type="file">
+              <input id="file-upload" type="file" (change)="onFileChange($event)">
               </div>
         </div>
         <div class="inputs">
             <div>
                 <span>Title</span>
-                <input type="text" placeholder="Title">
+                <input type="text" placeholder="Title" [(ngModel)]="news.title">
             </div>
             <div>
                 <span>Author</span>
-                <input type="text" placeholder="Author">
+                <input type="text" placeholder="Author" [(ngModel)]="news.author">
             </div>
             <div>
                 <span>Summary</span>
-                <input type="text" placeholder="Summary">
+                <input type="text" placeholder="Summary" [(ngModel)]="news.summary">
             </div>
-            <button>Edit</button>
-        
+            <button (click)="onUpdate()" [routerLink]="'/admin-news'">Edit</button>
         </div>
         <div class="area">
             <span>Content</span>
-            <textarea></textarea>
+            <textarea [(ngModel)]="news.content"></textarea>
             <button [routerLink]="'/admin-news'">Back</button>
         </div>
-        
     </div>
 </div>

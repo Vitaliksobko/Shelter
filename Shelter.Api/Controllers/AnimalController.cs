@@ -41,5 +41,21 @@ public class AnimalController : Controller
 
         return Ok(animal);
     }
+    
+    [HttpPut]
+    public async Task<IActionResult> UpdateAnimal([FromForm] UpdateAnimalDto request)
+    {
+        try
+        {
+            await _animalService.UpdateAnimal(request);
+
+            return Ok();
+        }
+        catch(Exception e)
+        {
+            return BadRequest(e.Message);
+            
+        }
+    }
   
 }

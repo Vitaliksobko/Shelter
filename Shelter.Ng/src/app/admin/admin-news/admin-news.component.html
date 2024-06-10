@@ -16,7 +16,7 @@
               </div>
             </div>
             <div class="btnn">
-              <button [routerLink]="'/admin-animal/edit-news'">Edit</button>
+              <button [routerLink]="'/admin-animal/edit-news/'+ new.newsId">Edit</button>
               <button (click)="delete(new.newsId)">Delete</button>
             </div>
           </div>

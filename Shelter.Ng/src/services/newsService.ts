@@ -15,7 +15,7 @@ export class NewsService {
   constructor(private http: HttpClient) { }
 
   getNews(): Observable<News[]> {
-    return this.http.get<News[]>(this.apiUrl);
+    return this.http.get<News[]>('/api/news');
   }
 
   getNew(id: string): Observable<any> {
@@ -28,6 +28,10 @@ export class NewsService {
 
   deleteNews(id: string): Observable<any> {
     return this.http.delete('api/news/product/'+ id);
-}
+  }
+
+  updateNews(updateNewsModel: FormData): Observable<any> {
+    return this.http.put('api/news', updateNewsModel);
+  }
 
 }

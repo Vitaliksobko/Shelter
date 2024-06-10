@@ -73,7 +73,7 @@ public class AdminService(IFileService fileService, IUnitOfWork _unitOfWork, Use
                 Description = createAnimalDto.Description,
                 Breed = createAnimalDto.Breed,
              
-                Images = await fileService.UploadImages(createAnimalDto.Images)
+                Image = await fileService.UploadImage(createAnimalDto.Image)
             };
             var animal = _mapper.Map<Animal>(animalDto);
             await _unitOfWork.Animal.InsertAsync(animal);

@@ -6,7 +6,7 @@ public class CreateAnimalDto
 {
     
     
-    public IEnumerable<IFormFile> Images { get; set; }
+    public IFormFile Image { get; set; }
     public string Name { get; set; }
     
     public int Age { get; set; }

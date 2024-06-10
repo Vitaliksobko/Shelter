@@ -45,7 +45,31 @@ public class NewsController: Controller
     {
         await _newsService.DeleteNews(id);
     }
+    
+    
+    [HttpGet("{newsId:guid}")]
+    public async Task<IActionResult> GetNewsById(Guid NewsId)
+    {
+        var news = await _newsService.GetNewsById(NewsId);
+        return Ok(news);
+    } 
 
    
+    
+    [HttpPut]
+    public async Task<IActionResult> UpdateNews([FromForm] UpdateNewsDto request)
+    {
+        try
+        {
+            await _newsService.UpdateNews(request);
+
+            return Ok();
+        }
+        catch(Exception e)
+        {
+            return BadRequest(e.Message);
+            
+        }
+    }
 
 }

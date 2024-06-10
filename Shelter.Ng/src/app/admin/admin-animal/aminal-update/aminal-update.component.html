@@ -1,35 +1,33 @@
 <div class="main-box">
     <div class="content">
         <div class="img">
-            <img src="../../../../assets/cat_1.webp" alt="">
+            <img [src]="selectedImageBase64 || (animal.image ? animal.image : '../../../../assets/cat_1.webp')" alt="">
             <div>
                 <label for="file-upload" class="custom-file-upload">
                   Upload photo
               </label>
-              <input id="file-upload" type="file">
+              <input id="file-upload" type="file" (change)="onFileChange($event)">
               </div>
         </div>
         <div class="inputs">
             <div>
                 <span>Name</span>
-                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Name" [(ngModel)]="animal.name">
             </div>
             <div>
-                <span>bread</span>
-                <input type="text" placeholder="Bread">
+                <span>Breed</span>
+                <input type="text" placeholder="Breed" [(ngModel)]="animal.breed">
             </div>
             <div>
                 <span>Age</span>
-                <input type="number" placeholder="Age">
+                <input type="number" placeholder="Age" [(ngModel)]="animal.age">
             </div>
-            <button>Edit</button>
-        
+            <button (click)="onUpdate()" [routerLink]="'/admin-animal'">Edit</button>
         </div>
         <div class="area">
-            <span>Desciption</span>
-            <textarea></textarea>
+            <span>Description</span>
+            <textarea [(ngModel)]="animal.description"></textarea>
             <button [routerLink]="'/admin-animal'">Back</button>
         </div>
-        
     </div>
 </div>

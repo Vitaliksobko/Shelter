@@ -2,19 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { AdminService } from '../../../services/adminService';
 import { ChangeRoleModel } from '../../../models/changeRoleModel';
 import { LocalService } from '../../../services/localService';
-
 import { AllUserModel } from '../../../models/allUserModel';
-
 
 @Component({
   selector: 'app-admin-users',
   templateUrl: './admin-users.component.html',
-  styleUrl: './admin-users.component.scss'
+  styleUrls: ['./admin-users.component.scss'] // Виправлено 'styleUrl' на 'styleUrls'
 })
 export class AdminUsersComponent implements OnInit {
   constructor(
     private adminService: AdminService,
-  
     private localService: LocalService
   ) { }
 
@@ -27,18 +24,18 @@ export class AdminUsersComponent implements OnInit {
     let changeRole = new ChangeRoleModel();
     changeRole.id = id;
     this.adminService.changeRole(changeRole).subscribe(() => {
-      this.adminService.getUsers().subscribe(data => {
-        this.users = data;
-      })
+      // Знаходимо користувача та оновлюємо його роль локально
+      const user = this.users.find(user => user.id === id);
+      if (user) {
+        user.isAdmin = !user.isAdmin; // Оновлюємо значення isAdmin локально
+      }
     });
   }
 
   delete(id: string) {
     this.adminService.deleteUser(id).subscribe(() => {
-      this.adminService.getUsers().subscribe(data => {
-        this.users = data;
-      })
-    })
+      this.users = this.users.filter(user => user.id !== id); // Видаляємо користувача з локального масиву
+    });
   }
 
   ngOnInit(): void {
@@ -49,8 +46,8 @@ export class AdminUsersComponent implements OnInit {
     this.adminService.getUsers().subscribe(data => {
       this.users = data;
     },
-      errorResponse => {
-        this.errorMessage = errorResponse.error;
-      })
+    errorResponse => {
+      this.errorMessage = errorResponse.error;
+    });
   }
 }

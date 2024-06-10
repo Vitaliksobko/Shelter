@@ -10,4 +10,6 @@ public interface IAnimalService
     Task<Animal> GetAnimal(AnimalIdDto animalIdDto);
 
     Task<Animal> BookAnimal(AnimalIdDto animalIdDto, Booking booking);
+
+    Task UpdateAnimal(UpdateAnimalDto updateAnimalDto);
 }

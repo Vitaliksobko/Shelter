@@ -25,6 +25,12 @@ export class AnimalService {
     return this.http.post<Booking>(`${this.apiUrl}/${animalId}/book`, booking);
   }
 
+  updateAnimal(updateProductModel: FormData): Observable<any> {
+    return this.http.put('api/animal', updateProductModel);
+  }
+
+
+
   
 
 }

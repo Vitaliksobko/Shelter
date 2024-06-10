@@ -46,4 +46,38 @@ public class NewsService(IFileService fileService, IUnitOfWork _unitOfWork, IMap
             throw new Exception(e.Message);
         }
     }
+    
+    public async Task<News> GetNewsById(Guid NewsId)
+    {
+        var news = await _unitOfWork.News.GetSingleByConditionAsync(n => n.NewsId == NewsId);
+       
+        return news;
+    }
+    
+    
+    public async Task UpdateNews(UpdateNewsDto updateNewsDto)
+    {
+        var NewsDto = _mapper.Map<NewsDto>(await _unitOfWork.News.GetSingleByConditionAsync(
+            a => a.NewsId == updateNewsDto.NewsId));
+
+        NewsDto.Author = updateNewsDto.Author;
+        NewsDto.Content = updateNewsDto.Content;
+        NewsDto.Summary = updateNewsDto.Summary;
+        NewsDto.Title = updateNewsDto.Title;
+        
+        if (updateNewsDto.Image == null)
+        {
+            NewsDto.Image = NewsDto.Image; 
+        }
+        else
+        {
+            NewsDto.Image = await fileService.UploadImage(updateNewsDto.Image);
+        }
+        
+
+        _unitOfWork.News.Update(_mapper.Map<News>(NewsDto));
+        await _unitOfWork.SaveAsync();
+
+        
+    }
 }

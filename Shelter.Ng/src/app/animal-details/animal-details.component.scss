@@ -1,0 +1,108 @@
+.container
+{
+  margin: 30px auto;
+  display: flex;
+flex-direction: row-reverse;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-image: url('/assets/liza.jpg');
+}
+.animal-info
+{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+}
+.booking-form
+{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+h2
+{
+   color: rgb(115, 216, 231);
+  -webkit-text-stroke: 1.8px white;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: 'Russo One';
+  text-shadow: -1px 4px 3px rgba(93,93,93,0.6);
+}
+.dog_info{
+  color: rgb(115, 216, 231);
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: 'Russo One';
+  text-shadow: -1px 4px 3px rgba(93,93,93,0.9);
+}
+.btn-submit{
+  padding-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 60px;
+  background-color:  rgb(115, 216, 231);
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Russo One";
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+  border:3px solid white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 0px auto;
+  display: block;
+}
+.btn-submit:hover{
+  background-color: white;
+  color:  rgb(115, 216, 231);
+  border: 1px solid  rgb(115, 216, 231);;
+  text-decoration: none;
+}
+label, p {
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  font-family: 'Russo One';
+  color: #697386;
+
+}
+
+.field input {
+  font-family: 'Montserrat';
+  color: lightblue;
+  font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline-color: rgb(115, 216, 231);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+                rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+.field input::placeholder
+{
+  color: #697386;
+}
+.product-specs
+{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.product-info
+{
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}

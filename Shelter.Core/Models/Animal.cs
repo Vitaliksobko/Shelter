@@ -4,8 +4,8 @@ public class Animal
 {
     
     public Guid AnimalId { get; set; }
-    
-   
+
+    public string Image { get; set; } = string.Empty;
     
     public string Name { get; set; }
     
@@ -15,7 +15,7 @@ public class Animal
     
     public string Description { get; set; }
     
-    public IList<string> Images { get; set; }
+   
     
     public List<Booking> Bookings { get; set; }
     

@@ -12,6 +12,8 @@ public class AnimalDto
     
     public string Description { get; set; }
     
-    public IList<string> Images { get; set; }
+    public string Image { get; set; }
+    
+   
     
 }

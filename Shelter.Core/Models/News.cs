@@ -6,7 +6,7 @@ public class News
 {
     public Guid NewsId { get; set; }
     
-    public string Image { get; set; }
+    public string Image { get; set; } = string.Empty;
 
     public string Title { get; set; }
     

@@ -1,18 +1,40 @@
 <header>
-    <div class="header-left">
-      <h1>CURS</h1>
-    </div>
-    <div class="header-catalog"> 
-      <a *ngIf="isAuthorized" href="/animal" class="header-button">Animal</a>
-    </div>
-   
-    <nav class="header-right">
-        <button *ngIf="isAuthorized" class="btn btn-dark" routerLink="/news">news</button>
-        <button *ngIf="isAuthorized" class="btn btn-dark" routerLink="/admin">Admin</button>
-        <button *ngIf="isAuthorized" class="btn btn-dark" routerLink="/home">home</button>
-        <button *ngIf="isAuthorized" class="btn btn-dark" routerLink="/about">About</button>
-        <button *ngIf="isAuthorized" class="btn btn-dark" (click)="onExit()">Exit</button>
-        <button *ngIf="isAdmin" class="btn btn-dark" routerLink="/admin">Admin</button>
-      
-    </nav>
-  </header>
+  <div class="header-left">
+    <img class="header-logo" src="/assets/8795277.jpg" />
+    <span class="header-title">Doggy Tail</span>
+  </div>
+  <div class="header-catalog">
+    <a class="" *ngIf="isAuthorized" href="/animal" class="header-button"
+      >Animals list</a
+    >
+  </div>
+
+  <nav class="header-right">
+    
+    <button *ngIf="isAuthorized" class="btn btn-dark" routerLink="/admin">
+      Admin
+    </button>
+    <button *ngIf="isAuthorized" class="btn btn-dark" routerLink="/home">
+      Home
+    </button>
+    <button *ngIf="isAuthorized" class="btn btn-dark" routerLink="/about">
+      About
+    </button>
+    <button *ngIf="isAuthorized" class="btn btn-dark" (click)="onExit()">
+      Exit
+    </button>
+    <button *ngIf="isAdmin" class="btn btn-dark" routerLink="/admin">
+      Admin
+    </button>
+    <button *ngIf="!isAuthorized" class="btn btn-dark" routerLink="/login">
+      Login
+    </button>
+    <button
+      *ngIf="!isAuthorized"
+      class="btn btn-dark"
+      routerLink="/registration"
+    >
+      Register
+    </button>
+  </nav>
+</header>

@@ -17,8 +17,8 @@ const routes: Routes = [
   {path: "admin", component: AdminComponent},
   {path: "admin-animal", component: AdminAnimalComponent},
   {path: "admin-animal/create-animal", component: AnimalCreateComponent},
-  {path: "admin-animal/edit-animal", component: AminalUpdateComponent},
-  {path: "admin-animal/edit-news", component: NewsUpdateComponent},
+  {path: "admin-animal/edit-animal/:id", component: AminalUpdateComponent},
+  {path: "admin-animal/edit-news/:id", component: NewsUpdateComponent},
   {path: "admin-news", component: AdminNewsComponent},
   {path: "admin-news/create-news", component: CreateNewsComponent},
   {path: "admin-user", component: AdminUsersComponent}

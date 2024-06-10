@@ -35,7 +35,7 @@ export class AnimalCreateComponent {
     this.formData.append("Description", this.animal.description);
     this.formData.append("Age", this.animal.age.toString());
     this.formData.append("Breed", this.animal.breed);
-    this.formData.append('Images', this.selectedFile);
+    this.formData.append('Image', this.selectedFile);
 
     this.adminService.createAnimal(this.formData).subscribe(
       () => {

@@ -1,0 +1,285 @@
+.main-page
+{
+  height: 665px;
+  background-image: url('/assets/mainn.jpg');
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  justify-content: center;
+  color: white;
+  font-family: 'Russo One';
+}
+.main-slogan
+{
+  width: 600px;
+  font-size: 44px;
+  text-transform: uppercase;
+}
+.add-text
+{
+  display: inline-block;
+  position: relative;
+}
+.add-text:before {
+  content: "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~";
+  font-size: 0.6em;
+  font-weight: 700;
+  font-family: Times New Roman, Serif;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 12px;
+  left: -1px;
+  overflow: hidden;
+}
+.buttons-cont
+{
+  display: flex;
+  gap: 20px;
+}
+.btn
+{
+  background-color: white;
+  color:  rgb(115, 216, 231);
+  border: 1px solid  rgb(115, 216, 231);;
+  text-decoration: none;
+  width: 150px;
+}
+.btn:hover
+{
+    background-color:  rgb(115, 216, 231);
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: "Russo One";
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+    border-color: none;
+    text-decoration: none;
+}
+.sec_block
+{
+  background-image: url('/assets/liza.jpg');
+  background-color: rgba(0, 0, 0, 0.8); /* White color with 30% opacity */
+  background-size: contain;
+  background-position: center;
+  padding: 40px;
+  border: 2px solid rgb(115, 216, 231);
+}
+.sec_block h3{
+  padding-top: 20px;
+  color: rgb(115, 216, 231);
+  -webkit-text-stroke: 1.8px white;
+  text-transform: uppercase;
+  font-size: 80px;
+  letter-spacing: 2px;
+  font-family: 'Russo One';
+  text-align: center;
+  text-shadow: -1px 4px 3px rgba(93,93,93,0.6);
+}
+.sec_block p
+{
+  font-family: 'Russo One';
+  color: white;
+  text-align: center;
+  width: 85%;
+  margin: 0px auto;  font-size: 30px;
+  -webkit-text-stroke: 0.5px white;;
+  color:rgb(115, 216, 231);
+  text-shadow: -1px 4px 3px rgba(93,93,93,0.6);
+  font-size: 28px;
+
+}
+.first_cont
+{
+  padding: 50px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.first_cont div
+{
+  background-color: rgb(115, 216, 231);
+  padding: 30px;
+  border-radius: 30px;
+  border: 5px solid white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.first_cont div img
+{
+  width: 60px;
+  margin: 10px auto;
+  display: block;
+}
+.first_cont div p
+{
+  font-size: 28px;
+  -webkit-text-stroke: 1px rgb(115, 216, 231);
+  color: white;
+}
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+
+.main_title {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-family: "Russo One";
+  font-size: 40px;
+  -webkit-text-stroke: 2px white;
+  color: rgb(115, 216, 231);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_title:before, .main_title:after {
+  content: "";
+  display: block;
+  margin: 0 0.2rem;
+  flex: 1;
+  border-bottom: 1px solid rgb(115, 216, 231);
+}
+.accordion
+{
+  display: flex;
+  gap: 50px;
+}
+.accordion_image
+{
+  border-radius: 30px;
+  height: 400px;
+}
+.wrapper {
+  width: 50%;
+  margin: auto;
+  font-family: "Russo One";
+}
+
+input[type=radio] {
+  display: none;
+}
+input[type=radio]:checked + .item .title {
+  color: #fff;
+  border-color: rgb(115, 216, 231);
+  background-color: rgb(115, 216, 231);
+  padding: 8px;
+  font-size: 18px;
+  letter-spacing: 1.4px;
+}
+input[type=radio]:checked + .item .title:after {
+  transform: rotate(180deg);
+}
+input[type=radio]:checked + .item .content {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s, opacity 0.7s;
+}
+
+.item {
+  display: block;
+  margin-bottom: 0.1rem;
+}
+
+.title {
+  padding: 8px;
+  border-radius: 0.3rem;
+  color: rgb(115, 216, 231);
+  border: 1px solid;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.title:after {
+  content: "▼";
+  display: inline-block;
+  font-size: 12px;
+}
+
+.content {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 0.3rem;
+  line-height: 1.6;
+  color: rgb(115, 216, 231);
+  border: 1px solid;
+  border-width: 0 1px;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+.container-form
+{
+  width: 50%;
+}
+.form-sect
+{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  gap: 50px;
+  width: 100%;
+}
+.h4
+{
+  color: rgb(115, 216, 231);
+  -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: 'Russo One';
+  text-align: center;
+  text-shadow: -1px 4px 3px rgba(93,93,93,0.6);
+}
+.main-form
+{
+  width: 100%;
+  width: 550px;
+  padding: 30px;
+  background:rgb(118, 215, 230);;
+  background-size: contain;
+  border-radius: 20px;
+  border: 2px solid white;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+
+}
+.btn-submit{
+  background-color:  rgb(115, 216, 231);
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Russo One";
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+  border:3px solid white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 0px auto;
+  display: block;
+}
+.btn-submit:hover{
+  background-color: white;
+  color:  rgb(115, 216, 231);
+  border: 1px solid  rgb(115, 216, 231);;
+  text-decoration: none;
+
+}
+.form-control
+{
+  border: 1px solid white;
+}
+.form-label
+{
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+  font-family: 'Russo One';
+  color: #697386;
+}

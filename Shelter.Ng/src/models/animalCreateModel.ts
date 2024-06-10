@@ -4,5 +4,5 @@ export class animalCreateModel {
     description : string = '';
     age : number = 0;
     breed : string = '';
-    image: string | null = '';
+    
 }

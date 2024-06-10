@@ -29,7 +29,7 @@ export class LoginComponent {
 
       let token = this.localService.get(LocalService.AuthTokenName);
       let role = this.localService.get(LocalService.AuthRole);
-      if(role = 'Admin')
+      if(role == 'Admin')
       window.location.href = '/admin';
       else 
       window.location.href = '/home'
