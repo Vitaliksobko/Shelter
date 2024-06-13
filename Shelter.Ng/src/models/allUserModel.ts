@@ -4,7 +4,6 @@ export class AllUserModel {
     password : string = '';
     firstName : string = '';
     secondName : string = '';
-    phone : string = '';
     isAdmin: boolean | null = false;
 
 }

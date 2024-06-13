@@ -15,9 +15,5 @@ public class Animal
     
     public string Description { get; set; }
     
-   
-    
     public List<Booking> Bookings { get; set; }
-    
-  
 }

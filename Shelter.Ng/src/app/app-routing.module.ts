@@ -7,15 +7,18 @@ import { AnimalDetailsComponent } from './animal-details/animal-details.componen
 import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
 import { AboutComponent } from './about/about.component';
+import { authGuard } from '../guards/auth.guard';
 
 const routes: Routes = [ 
 { path: "registration", component: RegistrationComponent},
 { path: "login", component: LoginComponent },
-{ path: "animal", component: AnimalComponent },
-{ path: "currentanimal/:id", component: AnimalDetailsComponent },
+{ path: "animal", component: AnimalComponent,canActivate: [authGuard] },
+{ path: "currentanimal/:id", component: AnimalDetailsComponent, canActivate: [authGuard] },
 { path: "home", component: HomeComponent },
-{ path: "news", component: NewsComponent },
-{ path: "about", component: AboutComponent }
+{ path: "news", component: NewsComponent ,canActivate: [authGuard]},
+{ path: "about", component: AboutComponent , canActivate: [authGuard]},
+{ path: '', redirectTo: '/login', pathMatch: 'full' },
+
 
 ];
 

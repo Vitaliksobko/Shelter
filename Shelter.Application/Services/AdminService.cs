@@ -8,7 +8,11 @@ using Shop.Core.Dtos;
 
 namespace Shelter.Application.Services;
 
-public class AdminService(IFileService fileService, IUnitOfWork _unitOfWork, UserManager<User> _userManager, IMapper _mapper) : IAdminService
+public class AdminService(
+    IFileService fileService,
+    IUnitOfWork _unitOfWork,
+    UserManager<User> _userManager,
+    IMapper _mapper) : IAdminService
 {
     
     public async Task ChangeUserRole(ChangeRoleDto changeRoleDto)
@@ -54,11 +58,17 @@ public class AdminService(IFileService fileService, IUnitOfWork _unitOfWork, Use
         return animal;
     }
     
-    public async Task<List<User>> GetAllUsers()
+    public async Task<List<UserDto>> GetAllUsers()
     {
         var users= await _unitOfWork.User.GetAll();
+        var usersDto = users.Select(_mapper.Map<UserDto>).ToList();
+
+        foreach (var user in usersDto)
+        {
+            user.IsAdmin = await _userManager.IsInRoleAsync(_mapper.Map<User>(user), "Admin");
+        }
         
-        return users;
+        return usersDto;
     }
     
     public async Task CreateAnimal(CreateAnimalDto createAnimalDto)
