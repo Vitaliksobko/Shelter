@@ -11,6 +11,7 @@ public class MappingProfile : Profile
         CreateMap<AnimalDto, Animal>().ReverseMap();
         CreateMap<NewsDto, News>().ReverseMap();
         CreateMap<QuestionDto, Question>().ReverseMap();
-        
+        CreateMap<User, UserDto>().ReverseMap();
+
     }
 }
