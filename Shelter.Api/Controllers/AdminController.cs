@@ -43,7 +43,7 @@ public class AdminController : Controller
     
     
     [HttpGet("users")]
-    public async Task<List<User>> GetAllUsers()
+    public async Task<List<UserDto>> GetAllUsers()
     {
         return await _adminService.GetAllUsers();
     }
