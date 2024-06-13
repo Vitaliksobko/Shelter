@@ -8,20 +8,21 @@ import { CreateNewsComponent } from './admin-news/create-news/create-news.compon
 import { AdminUsersComponent } from './admin-users/admin-users.component';
 import { AminalUpdateComponent } from './admin-animal/aminal-update/aminal-update.component';
 import { NewsUpdateComponent } from './admin-news/news-update/news-update.component';
+import { adminGuard } from './guards/admin.guard';
 
 
 
 
 
 const routes: Routes = [
-  {path: "admin", component: AdminComponent},
-  {path: "admin-animal", component: AdminAnimalComponent},
-  {path: "admin-animal/create-animal", component: AnimalCreateComponent},
-  {path: "admin-animal/edit-animal/:id", component: AminalUpdateComponent},
-  {path: "admin-animal/edit-news/:id", component: NewsUpdateComponent},
-  {path: "admin-news", component: AdminNewsComponent},
-  {path: "admin-news/create-news", component: CreateNewsComponent},
-  {path: "admin-user", component: AdminUsersComponent}
+  {path: "admin", component: AdminComponent, canActivate: [adminGuard]},
+  {path: "admin-animal", component: AdminAnimalComponent, canActivate: [adminGuard]},
+  {path: "admin-animal/create-animal", component: AnimalCreateComponent, canActivate: [adminGuard]},
+  {path: "admin-animal/edit-animal/:id", component: AminalUpdateComponent, canActivate: [adminGuard]},
+  {path: "admin-animal/edit-news/:id", component: NewsUpdateComponent, canActivate: [adminGuard]},
+  {path: "admin-news", component: AdminNewsComponent, canActivate: [adminGuard]},
+  {path: "admin-news/create-news", component: CreateNewsComponent, canActivate: [adminGuard]},
+  {path: "admin-user", component: AdminUsersComponent, canActivate: [adminGuard]}
 
 ];
 

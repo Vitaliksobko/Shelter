@@ -8,7 +8,5 @@ public class User : IdentityUser<Guid>
 
     public string SecondName { get; set; } = string.Empty;
 
-   
-
     public List<Booking> Bookings { get; set; }
 }

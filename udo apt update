@@ -1,0 +1,1027 @@
+Jun 13 16:41:50 maksi systemd[1]: notus-scanner.service: Consumed 1.136s CPU time.
+Jun 13 16:41:50 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:41:50 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:41:51 maksi notus-scanner[53895]: Traceback (most recent call last):
+Jun 13 16:41:51 maksi notus-scanner[53895]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:41:51 maksi notus-scanner[53895]:     sys.exit(main())
+Jun 13 16:41:51 maksi notus-scanner[53895]:              ^^^^^^
+Jun 13 16:41:51 maksi notus-scanner[53895]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:41:51 maksi notus-scanner[53895]:     run_daemon(
+Jun 13 16:41:51 maksi notus-scanner[53895]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:41:51 maksi notus-scanner[53895]:     raise AdvisoriesLoadingError(
+Jun 13 16:41:51 maksi notus-scanner[53895]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:41:51 maksi notus-scanner[53895]: Exception ignored in atexit callback: <function exit_cleanup at 0x768de9163060>
+Jun 13 16:41:51 maksi notus-scanner[53895]: Traceback (most recent call last):
+Jun 13 16:41:51 maksi notus-scanner[53895]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:41:51 maksi notus-scanner[53895]:     sys.exit()
+Jun 13 16:41:51 maksi notus-scanner[53895]: SystemExit:
+Jun 13 16:41:51 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:41:51 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:41:51 maksi systemd[1]: notus-scanner.service: Consumed 1.150s CPU time.
+Jun 13 16:42:13 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 16:42:13 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 16:42:13 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 16:42:13 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 16:42:13 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:42:13 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:42:13 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 16:42:13 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 93.
+Jun 13 16:42:13 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 93.
+Jun 13 16:42:13 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:42:13 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 16:42:13 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 16:42:13 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 16:42:32 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 16:42:51 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 129.
+Jun 13 16:42:51 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:42:51 maksi systemd[1]: notus-scanner.service: Consumed 1.150s CPU time.
+Jun 13 16:42:51 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:42:51 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:42:52 maksi notus-scanner[54210]: Traceback (most recent call last):
+Jun 13 16:42:52 maksi notus-scanner[54210]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:42:52 maksi notus-scanner[54210]:     sys.exit(main())
+Jun 13 16:42:52 maksi notus-scanner[54210]:              ^^^^^^
+Jun 13 16:42:52 maksi notus-scanner[54210]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:42:52 maksi notus-scanner[54210]:     run_daemon(
+Jun 13 16:42:52 maksi notus-scanner[54210]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:42:52 maksi notus-scanner[54210]:     raise AdvisoriesLoadingError(
+Jun 13 16:42:52 maksi notus-scanner[54210]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:42:52 maksi notus-scanner[54210]: Exception ignored in atexit callback: <function exit_cleanup at 0x71354d163060>
+Jun 13 16:42:52 maksi notus-scanner[54210]: Traceback (most recent call last):
+Jun 13 16:42:52 maksi notus-scanner[54210]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:42:52 maksi notus-scanner[54210]:     sys.exit()
+Jun 13 16:42:52 maksi notus-scanner[54210]: SystemExit:
+Jun 13 16:42:52 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:42:52 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:42:52 maksi systemd[1]: notus-scanner.service: Consumed 1.166s CPU time.
+Jun 13 16:43:20 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 16:43:44 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 16:43:44 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 16:43:44 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 16:43:44 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 16:43:44 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:43:44 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:43:44 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 16:43:44 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 94.
+Jun 13 16:43:44 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 94.
+Jun 13 16:43:44 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:43:44 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 16:43:44 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 16:43:44 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 16:43:52 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 130.
+Jun 13 16:43:52 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:43:52 maksi systemd[1]: notus-scanner.service: Consumed 1.166s CPU time.
+Jun 13 16:43:52 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:43:53 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:43:53 maksi notus-scanner[54524]: Traceback (most recent call last):
+Jun 13 16:43:53 maksi notus-scanner[54524]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:43:53 maksi notus-scanner[54524]:     sys.exit(main())
+Jun 13 16:43:53 maksi notus-scanner[54524]:              ^^^^^^
+Jun 13 16:43:53 maksi notus-scanner[54524]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:43:53 maksi notus-scanner[54524]:     run_daemon(
+Jun 13 16:43:53 maksi notus-scanner[54524]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:43:53 maksi notus-scanner[54524]:     raise AdvisoriesLoadingError(
+Jun 13 16:43:53 maksi notus-scanner[54524]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:43:53 maksi notus-scanner[54524]: Exception ignored in atexit callback: <function exit_cleanup at 0x7e6008f8f060>
+Jun 13 16:43:53 maksi notus-scanner[54524]: Traceback (most recent call last):
+Jun 13 16:43:53 maksi notus-scanner[54524]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:43:53 maksi notus-scanner[54524]:     sys.exit()
+Jun 13 16:43:53 maksi notus-scanner[54524]: SystemExit:
+Jun 13 16:43:53 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:43:53 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:43:53 maksi systemd[1]: notus-scanner.service: Consumed 1.142s CPU time.
+Jun 13 16:44:54 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 131.
+Jun 13 16:44:54 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:44:54 maksi systemd[1]: notus-scanner.service: Consumed 1.142s CPU time.
+Jun 13 16:44:54 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:44:54 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:44:55 maksi notus-scanner[54837]: Traceback (most recent call last):
+Jun 13 16:44:55 maksi notus-scanner[54837]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:44:55 maksi notus-scanner[54837]:     sys.exit(main())
+Jun 13 16:44:55 maksi notus-scanner[54837]:              ^^^^^^
+Jun 13 16:44:55 maksi notus-scanner[54837]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:44:55 maksi notus-scanner[54837]:     run_daemon(
+Jun 13 16:44:55 maksi notus-scanner[54837]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:44:55 maksi notus-scanner[54837]:     raise AdvisoriesLoadingError(
+Jun 13 16:44:55 maksi notus-scanner[54837]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:44:55 maksi notus-scanner[54837]: Exception ignored in atexit callback: <function exit_cleanup at 0x7f3f53df7060>
+Jun 13 16:44:55 maksi notus-scanner[54837]: Traceback (most recent call last):
+Jun 13 16:44:55 maksi notus-scanner[54837]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:44:55 maksi notus-scanner[54837]:     sys.exit()
+Jun 13 16:44:55 maksi notus-scanner[54837]: SystemExit:
+Jun 13 16:44:55 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:44:55 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:44:55 maksi systemd[1]: notus-scanner.service: Consumed 1.171s CPU time.
+Jun 13 16:45:01 maksi CRON[55098]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jun 13 16:45:01 maksi CRON[55099]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 13 16:45:01 maksi CRON[55098]: pam_unix(cron:session): session closed for user root
+Jun 13 16:45:14 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 16:45:14 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 16:45:14 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 16:45:14 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 16:45:14 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:45:14 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:45:14 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 16:45:14 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 95.
+Jun 13 16:45:14 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 95.
+Jun 13 16:45:14 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:45:14 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 16:45:14 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 16:45:14 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 16:45:20 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 16:45:32 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 16:45:33 maksi telegram-desktop.desktop[3664]: qt.gui.imageio.jpeg: ./lib/jpegli/decode_scan.cc:535: Incomplete scan detected.
+Jun 13 16:45:45 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718286345.515:317): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:45:55 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718286355.019:318): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:45:55 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 132.
+Jun 13 16:45:55 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:45:55 maksi systemd[1]: notus-scanner.service: Consumed 1.171s CPU time.
+Jun 13 16:45:55 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:45:55 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:45:56 maksi notus-scanner[55161]: Traceback (most recent call last):
+Jun 13 16:45:56 maksi notus-scanner[55161]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:45:56 maksi notus-scanner[55161]:     sys.exit(main())
+Jun 13 16:45:56 maksi notus-scanner[55161]:              ^^^^^^
+Jun 13 16:45:56 maksi notus-scanner[55161]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:45:56 maksi notus-scanner[55161]:     run_daemon(
+Jun 13 16:45:56 maksi notus-scanner[55161]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:45:56 maksi notus-scanner[55161]:     raise AdvisoriesLoadingError(
+Jun 13 16:45:56 maksi notus-scanner[55161]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:45:56 maksi notus-scanner[55161]: Exception ignored in atexit callback: <function exit_cleanup at 0x75d78a0c3060>
+Jun 13 16:45:56 maksi notus-scanner[55161]: Traceback (most recent call last):
+Jun 13 16:45:56 maksi notus-scanner[55161]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:45:56 maksi notus-scanner[55161]:     sys.exit()
+Jun 13 16:45:56 maksi notus-scanner[55161]: SystemExit:
+Jun 13 16:45:56 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:45:56 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:45:56 maksi systemd[1]: notus-scanner.service: Consumed 1.121s CPU time.
+Jun 13 16:46:21 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 16:46:21 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 16:46:31 maksi systemd-resolved[743]: Clock change detected. Flushing caches.
+Jun 13 16:46:31 maksi systemd-timesyncd[744]: Contacted time server 185.125.190.58:123 (ntp.ubuntu.com).
+Jun 13 16:46:46 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 16:46:46 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 16:46:46 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 16:46:46 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 16:46:46 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:46:46 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:46:46 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 16:46:46 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 96.
+Jun 13 16:46:46 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 96.
+Jun 13 16:46:46 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:46:46 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 16:46:46 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 16:46:46 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 16:46:58 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 133.
+Jun 13 16:46:58 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:46:58 maksi systemd[1]: notus-scanner.service: Consumed 1.121s CPU time.
+Jun 13 16:46:58 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:46:58 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:46:59 maksi notus-scanner[55510]: Traceback (most recent call last):
+Jun 13 16:46:59 maksi notus-scanner[55510]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:46:59 maksi notus-scanner[55510]:     sys.exit(main())
+Jun 13 16:46:59 maksi notus-scanner[55510]:              ^^^^^^
+Jun 13 16:46:59 maksi notus-scanner[55510]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:46:59 maksi notus-scanner[55510]:     run_daemon(
+Jun 13 16:46:59 maksi notus-scanner[55510]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:46:59 maksi notus-scanner[55510]:     raise AdvisoriesLoadingError(
+Jun 13 16:46:59 maksi notus-scanner[55510]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:46:59 maksi notus-scanner[55510]: Exception ignored in atexit callback: <function exit_cleanup at 0x7d1d4ddf7060>
+Jun 13 16:46:59 maksi notus-scanner[55510]: Traceback (most recent call last):
+Jun 13 16:46:59 maksi notus-scanner[55510]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:46:59 maksi notus-scanner[55510]:     sys.exit()
+Jun 13 16:46:59 maksi notus-scanner[55510]: SystemExit:
+Jun 13 16:46:59 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:46:59 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:46:59 maksi systemd[1]: notus-scanner.service: Consumed 1.187s CPU time.
+Jun 13 16:47:59 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 134.
+Jun 13 16:47:59 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:47:59 maksi systemd[1]: notus-scanner.service: Consumed 1.187s CPU time.
+Jun 13 16:47:59 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:47:59 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:48:00 maksi notus-scanner[55824]: Traceback (most recent call last):
+Jun 13 16:48:00 maksi notus-scanner[55824]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:48:00 maksi notus-scanner[55824]:     sys.exit(main())
+Jun 13 16:48:00 maksi notus-scanner[55824]:              ^^^^^^
+Jun 13 16:48:00 maksi notus-scanner[55824]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:48:00 maksi notus-scanner[55824]:     run_daemon(
+Jun 13 16:48:00 maksi notus-scanner[55824]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:48:00 maksi notus-scanner[55824]:     raise AdvisoriesLoadingError(
+Jun 13 16:48:00 maksi notus-scanner[55824]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:48:00 maksi notus-scanner[55824]: Exception ignored in atexit callback: <function exit_cleanup at 0x7d9fa5cf3060>
+Jun 13 16:48:00 maksi notus-scanner[55824]: Traceback (most recent call last):
+Jun 13 16:48:00 maksi notus-scanner[55824]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:48:00 maksi notus-scanner[55824]:     sys.exit()
+Jun 13 16:48:00 maksi notus-scanner[55824]: SystemExit:
+Jun 13 16:48:00 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:48:00 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:48:00 maksi systemd[1]: notus-scanner.service: Consumed 1.151s CPU time.
+Jun 13 16:48:17 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 16:48:17 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 16:48:17 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 16:48:17 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 16:48:17 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:48:17 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:48:17 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 16:48:17 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 97.
+Jun 13 16:48:17 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 97.
+Jun 13 16:48:17 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:48:17 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 16:48:17 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 16:48:17 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 16:49:00 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 135.
+Jun 13 16:49:00 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:49:00 maksi systemd[1]: notus-scanner.service: Consumed 1.151s CPU time.
+Jun 13 16:49:00 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:49:00 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:49:01 maksi notus-scanner[56147]: Traceback (most recent call last):
+Jun 13 16:49:01 maksi notus-scanner[56147]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:49:01 maksi notus-scanner[56147]:     sys.exit(main())
+Jun 13 16:49:01 maksi notus-scanner[56147]:              ^^^^^^
+Jun 13 16:49:01 maksi notus-scanner[56147]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:49:01 maksi notus-scanner[56147]:     run_daemon(
+Jun 13 16:49:01 maksi notus-scanner[56147]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:49:01 maksi notus-scanner[56147]:     raise AdvisoriesLoadingError(
+Jun 13 16:49:01 maksi notus-scanner[56147]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:49:01 maksi notus-scanner[56147]: Exception ignored in atexit callback: <function exit_cleanup at 0x793f0c463060>
+Jun 13 16:49:01 maksi notus-scanner[56147]: Traceback (most recent call last):
+Jun 13 16:49:01 maksi notus-scanner[56147]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:49:01 maksi notus-scanner[56147]:     sys.exit()
+Jun 13 16:49:01 maksi notus-scanner[56147]: SystemExit:
+Jun 13 16:49:01 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:49:01 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:49:01 maksi systemd[1]: notus-scanner.service: Consumed 1.161s CPU time.
+Jun 13 16:49:47 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 16:49:47 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 16:49:47 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 16:49:47 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 16:49:47 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:49:47 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:49:47 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 16:49:47 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 98.
+Jun 13 16:49:47 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 98.
+Jun 13 16:49:47 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:49:47 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 16:49:47 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 16:49:47 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 16:50:01 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 136.
+Jun 13 16:50:01 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:50:01 maksi systemd[1]: notus-scanner.service: Consumed 1.161s CPU time.
+Jun 13 16:50:01 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:50:02 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:50:03 maksi notus-scanner[56442]: Traceback (most recent call last):
+Jun 13 16:50:03 maksi notus-scanner[56442]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:50:03 maksi notus-scanner[56442]:     sys.exit(main())
+Jun 13 16:50:03 maksi notus-scanner[56442]:              ^^^^^^
+Jun 13 16:50:03 maksi notus-scanner[56442]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:50:03 maksi notus-scanner[56442]:     run_daemon(
+Jun 13 16:50:03 maksi notus-scanner[56442]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:50:03 maksi notus-scanner[56442]:     raise AdvisoriesLoadingError(
+Jun 13 16:50:03 maksi notus-scanner[56442]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:50:03 maksi notus-scanner[56442]: Exception ignored in atexit callback: <function exit_cleanup at 0x7220e438f060>
+Jun 13 16:50:03 maksi notus-scanner[56442]: Traceback (most recent call last):
+Jun 13 16:50:03 maksi notus-scanner[56442]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:50:03 maksi notus-scanner[56442]:     sys.exit()
+Jun 13 16:50:03 maksi notus-scanner[56442]: SystemExit:
+Jun 13 16:50:03 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:50:03 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:50:03 maksi systemd[1]: notus-scanner.service: Consumed 1.146s CPU time.
+Jun 13 16:51:03 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 137.
+Jun 13 16:51:03 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:51:03 maksi systemd[1]: notus-scanner.service: Consumed 1.146s CPU time.
+Jun 13 16:51:03 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:51:03 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:51:04 maksi notus-scanner[56744]: Traceback (most recent call last):
+Jun 13 16:51:04 maksi notus-scanner[56744]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:51:04 maksi notus-scanner[56744]:     sys.exit(main())
+Jun 13 16:51:04 maksi notus-scanner[56744]:              ^^^^^^
+Jun 13 16:51:04 maksi notus-scanner[56744]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:51:04 maksi notus-scanner[56744]:     run_daemon(
+Jun 13 16:51:04 maksi notus-scanner[56744]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:51:04 maksi notus-scanner[56744]:     raise AdvisoriesLoadingError(
+Jun 13 16:51:04 maksi notus-scanner[56744]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:51:04 maksi notus-scanner[56744]: Exception ignored in atexit callback: <function exit_cleanup at 0x7df2096c3060>
+Jun 13 16:51:04 maksi notus-scanner[56744]: Traceback (most recent call last):
+Jun 13 16:51:04 maksi notus-scanner[56744]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:51:04 maksi notus-scanner[56744]:     sys.exit()
+Jun 13 16:51:04 maksi notus-scanner[56744]: SystemExit:
+Jun 13 16:51:04 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:51:04 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:51:04 maksi systemd[1]: notus-scanner.service: Consumed 1.144s CPU time.
+Jun 13 16:51:18 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 16:51:18 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 16:51:18 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 16:51:18 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 16:51:18 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:51:18 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:51:18 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 16:51:18 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 99.
+Jun 13 16:51:18 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 99.
+Jun 13 16:51:18 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:51:18 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 16:51:18 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 16:51:18 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 16:52:04 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 138.
+Jun 13 16:52:04 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:52:04 maksi systemd[1]: notus-scanner.service: Consumed 1.144s CPU time.
+Jun 13 16:52:04 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:52:04 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:52:05 maksi notus-scanner[57058]: Traceback (most recent call last):
+Jun 13 16:52:05 maksi notus-scanner[57058]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:52:05 maksi notus-scanner[57058]:     sys.exit(main())
+Jun 13 16:52:05 maksi notus-scanner[57058]:              ^^^^^^
+Jun 13 16:52:05 maksi notus-scanner[57058]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:52:05 maksi notus-scanner[57058]:     run_daemon(
+Jun 13 16:52:05 maksi notus-scanner[57058]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:52:05 maksi notus-scanner[57058]:     raise AdvisoriesLoadingError(
+Jun 13 16:52:05 maksi notus-scanner[57058]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:52:05 maksi notus-scanner[57058]: Exception ignored in atexit callback: <function exit_cleanup at 0x7cc6acb63060>
+Jun 13 16:52:05 maksi notus-scanner[57058]: Traceback (most recent call last):
+Jun 13 16:52:05 maksi notus-scanner[57058]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:52:05 maksi notus-scanner[57058]:     sys.exit()
+Jun 13 16:52:05 maksi notus-scanner[57058]: SystemExit:
+Jun 13 16:52:05 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:52:05 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:52:05 maksi systemd[1]: notus-scanner.service: Consumed 1.167s CPU time.
+Jun 13 16:52:35 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 16:52:35 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 16:52:48 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 16:52:48 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 16:52:48 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 16:52:48 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 16:52:48 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:52:48 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:52:48 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 16:52:48 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 100.
+Jun 13 16:52:48 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 100.
+Jun 13 16:52:48 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:52:48 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 16:52:48 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 16:52:48 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 16:53:05 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 139.
+Jun 13 16:53:05 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:53:05 maksi systemd[1]: notus-scanner.service: Consumed 1.167s CPU time.
+Jun 13 16:53:05 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:53:05 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:53:06 maksi notus-scanner[57390]: Traceback (most recent call last):
+Jun 13 16:53:06 maksi notus-scanner[57390]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:53:06 maksi notus-scanner[57390]:     sys.exit(main())
+Jun 13 16:53:06 maksi notus-scanner[57390]:              ^^^^^^
+Jun 13 16:53:06 maksi notus-scanner[57390]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:53:06 maksi notus-scanner[57390]:     run_daemon(
+Jun 13 16:53:06 maksi notus-scanner[57390]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:53:06 maksi notus-scanner[57390]:     raise AdvisoriesLoadingError(
+Jun 13 16:53:06 maksi notus-scanner[57390]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:53:06 maksi notus-scanner[57390]: Exception ignored in atexit callback: <function exit_cleanup at 0x70e1af5cb060>
+Jun 13 16:53:06 maksi notus-scanner[57390]: Traceback (most recent call last):
+Jun 13 16:53:06 maksi notus-scanner[57390]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:53:06 maksi notus-scanner[57390]:     sys.exit()
+Jun 13 16:53:06 maksi notus-scanner[57390]: SystemExit:
+Jun 13 16:53:06 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:53:06 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:53:06 maksi systemd[1]: notus-scanner.service: Consumed 1.146s CPU time.
+Jun 13 16:54:06 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 140.
+Jun 13 16:54:06 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:54:06 maksi systemd[1]: notus-scanner.service: Consumed 1.146s CPU time.
+Jun 13 16:54:06 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:54:07 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:54:07 maksi notus-scanner[57706]: Traceback (most recent call last):
+Jun 13 16:54:07 maksi notus-scanner[57706]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:54:07 maksi notus-scanner[57706]:     sys.exit(main())
+Jun 13 16:54:07 maksi notus-scanner[57706]:              ^^^^^^
+Jun 13 16:54:07 maksi notus-scanner[57706]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:54:07 maksi notus-scanner[57706]:     run_daemon(
+Jun 13 16:54:07 maksi notus-scanner[57706]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:54:07 maksi notus-scanner[57706]:     raise AdvisoriesLoadingError(
+Jun 13 16:54:07 maksi notus-scanner[57706]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:54:07 maksi notus-scanner[57706]: Exception ignored in atexit callback: <function exit_cleanup at 0x77e8149f3060>
+Jun 13 16:54:07 maksi notus-scanner[57706]: Traceback (most recent call last):
+Jun 13 16:54:07 maksi notus-scanner[57706]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:54:07 maksi notus-scanner[57706]:     sys.exit()
+Jun 13 16:54:07 maksi notus-scanner[57706]: SystemExit:
+Jun 13 16:54:08 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:54:08 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:54:08 maksi systemd[1]: notus-scanner.service: Consumed 1.134s CPU time.
+Jun 13 16:54:19 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 16:54:19 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 16:54:19 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 16:54:19 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 16:54:19 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:54:19 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:54:19 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 16:54:19 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 101.
+Jun 13 16:54:19 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 101.
+Jun 13 16:54:19 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:54:19 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 16:54:19 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 16:54:19 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 16:54:51 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_method_call"  bus="session" path="/org/freedesktop/DBus" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_label="unconfined"[0m
+Jun 13 16:55:01 maksi CRON[58001]: pam_unix(cron:session): session opened for user root(uid=0) by (uid=0)
+Jun 13 16:55:01 maksi CRON[58002]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+Jun 13 16:55:01 maksi CRON[58001]: pam_unix(cron:session): session closed for user root
+Jun 13 16:55:08 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 141.
+Jun 13 16:55:08 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:55:08 maksi systemd[1]: notus-scanner.service: Consumed 1.134s CPU time.
+Jun 13 16:55:08 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:55:08 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:55:09 maksi notus-scanner[58010]: Traceback (most recent call last):
+Jun 13 16:55:09 maksi notus-scanner[58010]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:55:09 maksi notus-scanner[58010]:     sys.exit(main())
+Jun 13 16:55:09 maksi notus-scanner[58010]:              ^^^^^^
+Jun 13 16:55:09 maksi notus-scanner[58010]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:55:09 maksi notus-scanner[58010]:     run_daemon(
+Jun 13 16:55:09 maksi notus-scanner[58010]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:55:09 maksi notus-scanner[58010]:     raise AdvisoriesLoadingError(
+Jun 13 16:55:09 maksi notus-scanner[58010]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:55:09 maksi notus-scanner[58010]: Exception ignored in atexit callback: <function exit_cleanup at 0x795bcdfcf060>
+Jun 13 16:55:09 maksi notus-scanner[58010]: Traceback (most recent call last):
+Jun 13 16:55:09 maksi notus-scanner[58010]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:55:09 maksi notus-scanner[58010]:     sys.exit()
+Jun 13 16:55:09 maksi notus-scanner[58010]: SystemExit:
+Jun 13 16:55:09 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:55:09 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:55:09 maksi systemd[1]: notus-scanner.service: Consumed 1.154s CPU time.
+Jun 13 16:55:40 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_method_call"  bus="session" path="/org/freedesktop/DBus" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_label="unconfined"[0m
+Jun 13 16:55:45 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_method_call"  bus="session" path="/org/freedesktop/DBus" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_label="unconfined"[0m
+Jun 13 16:55:49 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 16:55:49 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 16:55:49 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 16:55:49 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 16:55:49 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:55:49 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:55:49 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 16:55:49 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 102.
+Jun 13 16:55:49 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 102.
+Jun 13 16:55:49 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:55:49 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 16:55:49 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 16:55:49 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 16:56:00 maksi systemd-logind[865]: [0;1;39m[0;1;31m[0;1;39mThe system will suspend now![0m
+Jun 13 16:56:00 maksi ModemManager[943]: <info>  [sleep-monitor-systemd] system is about to suspend
+Jun 13 16:56:00 maksi NetworkManager[876]: <info>  [1718286960.9150] manager: sleep: sleep requested (sleeping: no  enabled: yes)
+Jun 13 16:56:00 maksi NetworkManager[876]: <info>  [1718286960.9151] device (p2p-dev-wlp0s20f3): state change: disconnected -> unmanaged (reason 'sleeping', sys-iface-state: 'managed')
+Jun 13 16:56:00 maksi NetworkManager[876]: <info>  [1718286960.9155] manager: NetworkManager state is now ASLEEP
+Jun 13 16:56:00 maksi NetworkManager[876]: <info>  [1718286960.9156] device (wlp0s20f3): state change: activated -> deactivating (reason 'sleeping', sys-iface-state: 'managed')
+Jun 13 16:56:00 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718286960.908:319): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="PrepareForSleep" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:56:00 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718286960.908:320): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:56:00 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718286960.908:321): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:56:00 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718286960.908:322): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:56:00 maksi dbus-daemon[823]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.11' (uid=0 pid=876 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+Jun 13 16:56:00 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718286960.924:323): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:56:00 maksi systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+Jun 13 16:56:00 maksi dbus-daemon[823]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jun 13 16:56:00 maksi systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+Jun 13 16:56:00 maksi kernel: wlp0s20f3: deauthenticating from f0:a7:31:46:35:5f by local choice (Reason: 3=DEAUTH_LEAVING)
+Jun 13 16:56:01 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: CTRL-EVENT-DISCONNECTED bssid=f0:a7:31:46:35:5f reason=3 locally_generated=1[0m
+Jun 13 16:56:01 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Jun 13 16:56:01 maksi NetworkManager[876]: <info>  [1718286961.0783] device (wlp0s20f3): state change: deactivating -> disconnected (reason 'sleeping', sys-iface-state: 'managed')
+Jun 13 16:56:01 maksi avahi-daemon[821]: Withdrawing address record for fe80::d05b:64b0:8d11:2f0c on wlp0s20f3.
+Jun 13 16:56:01 maksi avahi-daemon[821]: Leaving mDNS multicast group on interface wlp0s20f3.IPv6 with address fe80::d05b:64b0:8d11:2f0c.
+Jun 13 16:56:01 maksi avahi-daemon[821]: Interface wlp0s20f3.IPv6 no longer relevant for mDNS.
+Jun 13 16:56:01 maksi NetworkManager[876]: <info>  [1718286961.0801] dhcp4 (wlp0s20f3): canceled DHCP transaction
+Jun 13 16:56:01 maksi NetworkManager[876]: <info>  [1718286961.0801] dhcp4 (wlp0s20f3): activation: beginning transaction (timeout in 45 seconds)
+Jun 13 16:56:01 maksi NetworkManager[876]: <info>  [1718286961.0803] dhcp4 (wlp0s20f3): state changed no lease
+Jun 13 16:56:01 maksi avahi-daemon[821]: Withdrawing address record for 192.168.0.104 on wlp0s20f3.
+Jun 13 16:56:01 maksi avahi-daemon[821]: Leaving mDNS multicast group on interface wlp0s20f3.IPv4 with address 192.168.0.104.
+Jun 13 16:56:01 maksi avahi-daemon[821]: Interface wlp0s20f3.IPv4 no longer relevant for mDNS.
+Jun 13 16:56:01 maksi systemd-resolved[743]: wlp0s20f3: Bus client set default route setting: no
+Jun 13 16:56:01 maksi systemd-resolved[743]: wlp0s20f3: Bus client reset DNS server list.
+Jun 13 16:56:01 maksi NetworkManager[876]: <info>  [1718286961.1466] device (wlp0s20f3): supplicant interface state: completed -> disconnected
+Jun 13 16:56:01 maksi NetworkManager[876]: <info>  [1718286961.1474] device (wlp0s20f3): state change: disconnected -> unmanaged (reason 'sleeping', sys-iface-state: 'managed')
+Jun 13 16:56:01 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mp2p-dev-wlp0s20: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Jun 13 16:56:01 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mp2p-dev-wlp0s20: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Jun 13 16:56:01 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mnl80211: deinit ifname=p2p-dev-wlp0s20 disabled_11b_rates=0[0m
+Jun 13 16:56:01 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718286961.220:324): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:56:01 maksi systemd[1]: Reached target sleep.target - Sleep.
+Jun 13 16:56:01 maksi systemd[1]: Starting systemd-suspend.service - System Suspend...
+Jun 13 16:56:01 maksi systemd-sleep[58382]: Entering sleep state 'suspend'...
+Jun 13 16:56:01 maksi kernel: PM: suspend entry (s2idle)
+Jun 13 16:56:01 maksi kernel: Filesystems sync: 0.003 seconds
+Jun 13 16:57:47 maksi kernel: Freezing user space processes
+Jun 13 16:57:47 maksi kernel: Freezing user space processes completed (elapsed 0.034 seconds)
+Jun 13 16:57:47 maksi kernel: OOM killer disabled.
+Jun 13 16:57:47 maksi kernel: Freezing remaining freezable tasks
+Jun 13 16:57:47 maksi kernel: Freezing remaining freezable tasks completed (elapsed 0.002 seconds)
+Jun 13 16:57:47 maksi kernel: printk: Suspending console(s) (use no_console_suspend to debug)
+Jun 13 16:57:47 maksi kernel: ACPI: EC: interrupt blocked
+Jun 13 16:57:47 maksi kernel: ACPI: EC: interrupt unblocked
+Jun 13 16:57:47 maksi kernel: nvme nvme0: 12/0/0 default/read/poll queues
+Jun 13 16:57:47 maksi kernel: i915 0000:00:02.0: [drm] GT0: GuC firmware i915/adlp_guc_70.bin version 70.5.1
+Jun 13 16:57:47 maksi kernel: i915 0000:00:02.0: [drm] GT0: HuC firmware i915/tgl_huc.bin version 7.9.3
+Jun 13 16:57:47 maksi kernel: i915 0000:00:02.0: [drm] GT0: HuC: authenticated for all workloads
+Jun 13 16:57:47 maksi kernel: i915 0000:00:02.0: [drm] GT0: GUC: submission enabled
+Jun 13 16:57:47 maksi kernel: i915 0000:00:02.0: [drm] GT0: GUC: SLPC enabled
+Jun 13 16:57:47 maksi kernel: i915 0000:00:02.0: [drm] GT0: GUC: RC enabled
+Jun 13 16:57:47 maksi kernel: mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_ops [i915])
+Jun 13 16:57:47 maksi kernel: OOM killer enabled.
+Jun 13 16:57:47 maksi systemd-resolved[743]: Clock change detected. Flushing caches.
+Jun 13 16:57:47 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Jun 13 16:57:47 maksi kernel: Restarting tasks ... done.
+Jun 13 16:57:47 maksi kernel: [0;1;39m[0;1;31m[0;1;39mrandom: crng reseeded on system resumption[0m
+Jun 13 16:57:47 maksi kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mthermal thermal_zone9: failed to read out thermal zone (-61)[0m
+Jun 13 16:57:47 maksi kernel: mei_pxp 0000:00:16.0-fbf6fcf1-96cf-4e2e-a6a6-1bab8cbe36b1: bound 0000:00:02.0 (ops i915_pxp_tee_component_ops [i915])
+Jun 13 16:57:47 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: CTRL-EVENT-DSCP-POLICY clear_all[0m
+Jun 13 16:57:47 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mnl80211: deinit ifname=wlp0s20f3 disabled_11b_rates=0[0m
+Jun 13 16:57:47 maksi systemd-sleep[58382]: System returned from sleep state.
+Jun 13 16:57:47 maksi kernel: PM: suspend exit
+Jun 13 16:57:47 maksi systemd[1]: man-db.service - Daily man-db regeneration was skipped because of an unmet condition check (ConditionACPower=true).
+Jun 13 16:57:47 maksi systemd[1]: systemd-suspend.service: Deactivated successfully.
+Jun 13 16:57:47 maksi systemd[1]: Finished systemd-suspend.service - System Suspend.
+Jun 13 16:57:48 maksi systemd[1]: Stopped target sleep.target - Sleep.
+Jun 13 16:57:48 maksi systemd[1]: Reached target suspend.target - Suspend.
+Jun 13 16:57:48 maksi systemd-logind[865]: Operation 'sleep' finished.
+Jun 13 16:57:48 maksi ModemManager[943]: <info>  [sleep-monitor-systemd] system is resuming
+Jun 13 16:57:48 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287067.997:325): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.login1.Manager" member="PrepareForSleep" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:57:48 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287067.997:326): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:57:48 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287068.001:327): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:57:48 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287068.001:328): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:57:48 maksi kernel: [0;1;31m[0;1;39m[0;1;31miwlwifi 0000:00:14.3: WRT: Invalid buffer destination[0m
+Jun 13 16:57:48 maksi NetworkManager[876]: <info>  [1718287068.0011] manager: sleep: wake requested (sleeping: yes  enabled: yes)
+Jun 13 16:57:48 maksi NetworkManager[876]: <info>  [1718287068.0013] device (wlp0s20f3): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Jun 13 16:57:48 maksi systemd[1]: Starting grub-common.service - Record successful boot for GRUB...
+Jun 13 16:57:48 maksi systemd[1]: Stopped target suspend.target - Suspend.
+Jun 13 16:57:48 maksi systemd[1]: grub-common.service: Deactivated successfully.
+Jun 13 16:57:48 maksi systemd[1]: Finished grub-common.service - Record successful boot for GRUB.
+Jun 13 16:57:48 maksi systemd[1]: Starting grub-initrd-fallback.service - GRUB failed boot detection...
+Jun 13 16:57:48 maksi systemd[1]: grub-initrd-fallback.service: Deactivated successfully.
+Jun 13 16:57:48 maksi systemd[1]: Finished grub-initrd-fallback.service - GRUB failed boot detection.
+Jun 13 16:57:48 maksi kernel: iwlwifi 0000:00:14.3: WFPM_UMAC_PD_NOTIFICATION: 0x20
+Jun 13 16:57:48 maksi kernel: iwlwifi 0000:00:14.3: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+Jun 13 16:57:48 maksi kernel: iwlwifi 0000:00:14.3: WFPM_AUTH_KEY_0: 0x90
+Jun 13 16:57:48 maksi kernel: iwlwifi 0000:00:14.3: CNVI_SCU_SEQ_DATA_DW9: 0x10
+Jun 13 16:57:48 maksi kernel: iwlwifi 0000:00:14.3: RFIm is deactivated, reason = 4
+Jun 13 16:57:48 maksi NetworkManager[876]: <info>  [1718287068.1907] device (p2p-dev-wlp0s20f3): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Jun 13 16:57:48 maksi NetworkManager[876]: <info>  [1718287068.1913] manager: NetworkManager state is now CONNECTED_LOCAL
+Jun 13 16:57:48 maksi NetworkManager[876]: <info>  [1718287068.2446] device (wlp0s20f3): supplicant interface state: internal-starting -> disconnected
+Jun 13 16:57:48 maksi NetworkManager[876]: <info>  [1718287068.2447] device (p2p-dev-wlp0s20f3): state change: unavailable -> unmanaged (reason 'removed', sys-iface-state: 'removed')
+Jun 13 16:57:48 maksi NetworkManager[876]: <info>  [1718287068.2451] Wi-Fi P2P device controlled by interface wlp0s20f3 created
+Jun 13 16:57:48 maksi NetworkManager[876]: <info>  [1718287068.2453] manager: (p2p-dev-wlp0s20f3): new 802.11 Wi-Fi P2P device (/org/freedesktop/NetworkManager/Devices/11)
+Jun 13 16:57:48 maksi NetworkManager[876]: <info>  [1718287068.2455] device (p2p-dev-wlp0s20f3): state change: unmanaged -> unavailable (reason 'managed', sys-iface-state: 'external')
+Jun 13 16:57:48 maksi NetworkManager[876]: <info>  [1718287068.2459] device (wlp0s20f3): state change: unavailable -> disconnected (reason 'supplicant-available', sys-iface-state: 'managed')
+Jun 13 16:57:48 maksi NetworkManager[876]: <info>  [1718287068.2462] device (p2p-dev-wlp0s20f3): state change: unavailable -> disconnected (reason 'none', sys-iface-state: 'managed')
+Jun 13 16:57:48 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 16:57:48 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 16:57:48 maksi dbus-daemon[823]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service' requested by ':1.150' (uid=1000 pid=3457 comm="/usr/bin/gnome-shell" label="unconfined")
+Jun 13 16:57:48 maksi systemd[1]: Starting fprintd.service - Fingerprint Authentication Daemon...
+Jun 13 16:57:49 maksi dbus-daemon[823]: [system] Successfully activated service 'net.reactivated.Fprint'
+Jun 13 16:57:49 maksi systemd[1]: Started fprintd.service - Fingerprint Authentication Daemon.
+Jun 13 16:57:49 maksi gnome-shell[3457]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mJS ERROR: Gio.IOErrorEnum: GDBus.Error:net.reactivated.Fprint.Error.NoSuchDevice: No devices available[0m
+                                         [0;1;38;5;185masyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:114:23[0m
+                                         [0;1;38;5;185m@resource:///org/gnome/shell/ui/init.js:21:20[0m
+Jun 13 16:57:49 maksi gnome-shell[3457]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mJS ERROR: Gio.IOErrorEnum: GDBus.Error:net.reactivated.Fprint.Error.NoSuchDevice: No devices available[0m
+                                         [0;1;38;5;185masyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:114:23[0m
+                                         [0;1;38;5;185m@resource:///org/gnome/shell/ui/init.js:21:20[0m
+Jun 13 16:57:50 maksi gdm-password][58538]: gkr-pam: unlocked login keyring
+Jun 13 16:57:50 maksi gnome-shell[3457]: [0;1;39m[0;1;31m[0;1;39mLaunching DING process[0m
+Jun 13 16:57:50 maksi NetworkManager[876]: <info>  [1718287070.4532] agent-manager: agent[925a9099e79435e4,:1.150/org.gnome.Shell.NetworkAgent/1000]: agent registered
+Jun 13 16:57:50 maksi ModemManager[943]: <info>  [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:14.3': not supported by any plugin
+Jun 13 16:57:50 maksi gnome-shell[3457]: DING: Detected async api for thumbnails
+Jun 13 16:57:50 maksi gnome-shell[3457]: DING: DBus interface for Nautilus (org.gnome.Nautilus.FileOperations2) is now available.
+Jun 13 16:57:50 maksi gnome-shell[3457]: DING: DBus interface for Nautilus (org.freedesktop.FileManager1) is now available.
+Jun 13 16:57:50 maksi gnome-shell[3457]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mGFileInfo created without standard::icon[0m
+Jun 13 16:57:50 maksi gnome-shell[3457]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mfile ../../../gio/gfileinfo.c: line 1766 (g_file_info_get_icon): should not be reached[0m
+Jun 13 16:57:50 maksi gnome-shell[3457]: DING: DBus interface for Gvfs daemon (org.gtk.vfs.Metadata) is now available.
+Jun 13 16:57:50 maksi gnome-shell[3457]: DING: DBus interface for Switcheroo control (net.hadess.SwitcherooControl) is now available.
+Jun 13 16:57:50 maksi gnome-shell[3457]: DING: ** Message: 16:57:50.632: Connecting to org.freedesktop.Tracker3.Miner.Files
+Jun 13 16:57:50 maksi gnome-shell[3457]: DING: GNOME nautilus 45.rc
+Jun 13 16:57:50 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jun 13 16:57:50 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jun 13 16:57:50 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jun 13 16:57:50 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jun 13 16:57:50 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jun 13 16:57:50 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jun 13 16:57:50 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jun 13 16:57:50 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jun 13 16:57:50 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jun 13 16:57:51 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: CTRL-EVENT-REGDOM-CHANGE init=DRIVER type=COUNTRY alpha2=DE[0m
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9453] policy: auto-activating connection 'TP-Link_3560_5G' (55beca0c-80a8-4b2c-b0b3-2e5d7fa253fc)
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9457] device (wlp0s20f3): Activation: starting connection 'TP-Link_3560_5G' (55beca0c-80a8-4b2c-b0b3-2e5d7fa253fc)
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9458] device (wlp0s20f3): state change: disconnected -> prepare (reason 'none', sys-iface-state: 'managed')
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9460] manager: NetworkManager state is now CONNECTING
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9462] device (wlp0s20f3): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9467] device (wlp0s20f3): Activation: (wifi) access point 'TP-Link_3560_5G' has security, but secrets are required.
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9467] device (wlp0s20f3): state change: config -> need-auth (reason 'none', sys-iface-state: 'managed')
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9470] sup-iface[c3c515842e54c1ac,4,wlp0s20f3]: wps: type pbc start...
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9483] device (wlp0s20f3): state change: need-auth -> prepare (reason 'none', sys-iface-state: 'managed')
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9486] device (wlp0s20f3): state change: prepare -> config (reason 'none', sys-iface-state: 'managed')
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9489] device (wlp0s20f3): Activation: (wifi) connection 'TP-Link_3560_5G' has security, and secrets exist.  No new secrets needed.
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9490] Config: added 'ssid' value 'TP-Link_3560_5G'
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9490] Config: added 'scan_ssid' value '1'
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9490] Config: added 'bgscan' value 'simple:30:-70:86400'
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9491] Config: added 'key_mgmt' value 'WPA-PSK WPA-PSK-SHA256 FT-PSK SAE FT-SAE'
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9491] Config: added 'auth_alg' value 'OPEN'
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9491] Config: added 'psk' value '<hidden>'
+Jun 13 16:57:51 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: WPS-CANCEL[0m
+Jun 13 16:57:51 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: SME: Trying to authenticate with f0:a7:31:46:35:5f (SSID='TP-Link_3560_5G' freq=5180 MHz)[0m
+Jun 13 16:57:51 maksi kernel: wlp0s20f3: authenticate with f0:a7:31:46:35:5f
+Jun 13 16:57:51 maksi kernel: wlp0s20f3: send auth to f0:a7:31:46:35:5f (try 1/3)
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9679] device (wlp0s20f3): supplicant interface state: disconnected -> authenticating
+Jun 13 16:57:51 maksi NetworkManager[876]: <info>  [1718287071.9680] device (p2p-dev-wlp0s20f3): supplicant management interface state: disconnected -> authenticating
+Jun 13 16:57:51 maksi kernel: wlp0s20f3: authenticated
+Jun 13 16:57:51 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: Trying to associate with f0:a7:31:46:35:5f (SSID='TP-Link_3560_5G' freq=5180 MHz)[0m
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.0008] device (wlp0s20f3): supplicant interface state: authenticating -> associating
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.0008] device (p2p-dev-wlp0s20f3): supplicant management interface state: authenticating -> associating
+Jun 13 16:57:52 maksi kernel: wlp0s20f3: associate with f0:a7:31:46:35:5f (try 1/3)
+Jun 13 16:57:52 maksi kernel: wlp0s20f3: RX AssocResp from f0:a7:31:46:35:5f (capab=0x11 status=0 aid=1)
+Jun 13 16:57:52 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: Associated with f0:a7:31:46:35:5f[0m
+Jun 13 16:57:52 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0[0m
+Jun 13 16:57:52 maksi kernel: wlp0s20f3: associated
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.0431] device (wlp0s20f3): supplicant interface state: associating -> associated
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.0431] device (p2p-dev-wlp0s20f3): supplicant management interface state: associating -> associated
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.1550] device (wlp0s20f3): supplicant interface state: associated -> 4way_handshake
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.1551] device (p2p-dev-wlp0s20f3): supplicant management interface state: associated -> 4way_handshake
+Jun 13 16:57:52 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: WPA: Key negotiation completed with f0:a7:31:46:35:5f [PTK=CCMP GTK=CCMP][0m
+Jun 13 16:57:52 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: CTRL-EVENT-CONNECTED - Connection to f0:a7:31:46:35:5f completed [id=0 id_str=][0m
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2474] device (wlp0s20f3): supplicant interface state: 4way_handshake -> completed
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2474] device (wlp0s20f3): Activation: (wifi) Stage 2 of 5 (Device Configure) successful. Connected to wireless network "TP-Link_3560_5G"
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2474] device (p2p-dev-wlp0s20f3): supplicant management interface state: 4way_handshake -> completed
+Jun 13 16:57:52 maksi wpa_supplicant[877]: [0;1;39m[0;1;31m[0;1;39mwlp0s20f3: CTRL-EVENT-SIGNAL-CHANGE above=0 signal=-84 noise=9999 txrate=26000[0m
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2477] device (wlp0s20f3): state change: config -> ip-config (reason 'none', sys-iface-state: 'managed')
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2484] dhcp4 (wlp0s20f3): activation: beginning transaction (timeout in 45 seconds)
+Jun 13 16:57:52 maksi avahi-daemon[821]: Joining mDNS multicast group on interface wlp0s20f3.IPv6 with address fe80::d05b:64b0:8d11:2f0c.
+Jun 13 16:57:52 maksi avahi-daemon[821]: New relevant interface wlp0s20f3.IPv6 for mDNS.
+Jun 13 16:57:52 maksi avahi-daemon[821]: Registering new address record for fe80::d05b:64b0:8d11:2f0c on wlp0s20f3.*.
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2756] dhcp4 (wlp0s20f3): state changed new lease, address=192.168.0.104
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2765] policy: set 'TP-Link_3560_5G' (wlp0s20f3) as default for IPv4 routing and DNS
+Jun 13 16:57:52 maksi avahi-daemon[821]: Joining mDNS multicast group on interface wlp0s20f3.IPv4 with address 192.168.0.104.
+Jun 13 16:57:52 maksi avahi-daemon[821]: New relevant interface wlp0s20f3.IPv4 for mDNS.
+Jun 13 16:57:52 maksi avahi-daemon[821]: Registering new address record for 192.168.0.104 on wlp0s20f3.IPv4.
+Jun 13 16:57:52 maksi systemd-resolved[743]: wlp0s20f3: Bus client set default route setting: yes
+Jun 13 16:57:52 maksi systemd-resolved[743]: wlp0s20f3: Bus client set DNS server list to: 192.168.0.1
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2852] device (wlp0s20f3): state change: ip-config -> ip-check (reason 'none', sys-iface-state: 'managed')
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2878] device (wlp0s20f3): state change: ip-check -> secondaries (reason 'none', sys-iface-state: 'managed')
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2881] device (wlp0s20f3): state change: secondaries -> activated (reason 'none', sys-iface-state: 'managed')
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2885] manager: NetworkManager state is now CONNECTED_SITE
+Jun 13 16:57:52 maksi NetworkManager[876]: <info>  [1718287072.2896] device (wlp0s20f3): Activation: successful, device activated.
+Jun 13 16:57:53 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 16:57:53 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 16:57:53 maksi NetworkManager[876]: <info>  [1718287073.4780] manager: NetworkManager state is now CONNECTED_GLOBAL
+Jun 13 16:57:54 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 16:57:54 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 16:57:55 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 142.
+Jun 13 16:57:55 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:57:55 maksi systemd[1]: notus-scanner.service: Consumed 1.154s CPU time.
+Jun 13 16:57:55 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:57:55 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:57:56 maksi notus-scanner[58847]: Traceback (most recent call last):
+Jun 13 16:57:56 maksi notus-scanner[58847]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:57:56 maksi notus-scanner[58847]:     sys.exit(main())
+Jun 13 16:57:56 maksi notus-scanner[58847]:              ^^^^^^
+Jun 13 16:57:56 maksi notus-scanner[58847]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:57:56 maksi notus-scanner[58847]:     run_daemon(
+Jun 13 16:57:56 maksi notus-scanner[58847]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:57:56 maksi notus-scanner[58847]:     raise AdvisoriesLoadingError(
+Jun 13 16:57:56 maksi notus-scanner[58847]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:57:56 maksi notus-scanner[58847]: Exception ignored in atexit callback: <function exit_cleanup at 0x75040cf8f060>
+Jun 13 16:57:56 maksi notus-scanner[58847]: Traceback (most recent call last):
+Jun 13 16:57:56 maksi notus-scanner[58847]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:57:56 maksi notus-scanner[58847]:     sys.exit()
+Jun 13 16:57:56 maksi notus-scanner[58847]: SystemExit:
+Jun 13 16:57:56 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:57:56 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:57:56 maksi systemd[1]: notus-scanner.service: Consumed 1.264s CPU time.
+Jun 13 16:57:57 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 16:58:00 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 16:58:01 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 16:58:03 maksi systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+Jun 13 16:58:18 maksi systemd[1]: fprintd.service: Deactivated successfully.
+Jun 13 16:58:18 maksi kernel: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mkauditd_printk_skb: 5 callbacks suppressed[0m
+Jun 13 16:58:18 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287098.953:334): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 16:58:56 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 143.
+Jun 13 16:58:56 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:58:56 maksi systemd[1]: notus-scanner.service: Consumed 1.264s CPU time.
+Jun 13 16:58:56 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:58:57 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:58:57 maksi notus-scanner[59302]: Traceback (most recent call last):
+Jun 13 16:58:57 maksi notus-scanner[59302]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:58:57 maksi notus-scanner[59302]:     sys.exit(main())
+Jun 13 16:58:57 maksi notus-scanner[59302]:              ^^^^^^
+Jun 13 16:58:57 maksi notus-scanner[59302]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:58:57 maksi notus-scanner[59302]:     run_daemon(
+Jun 13 16:58:57 maksi notus-scanner[59302]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:58:57 maksi notus-scanner[59302]:     raise AdvisoriesLoadingError(
+Jun 13 16:58:57 maksi notus-scanner[59302]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:58:57 maksi notus-scanner[59302]: Exception ignored in atexit callback: <function exit_cleanup at 0x7a8996c67060>
+Jun 13 16:58:57 maksi notus-scanner[59302]: Traceback (most recent call last):
+Jun 13 16:58:57 maksi notus-scanner[59302]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:58:57 maksi notus-scanner[59302]:     sys.exit()
+Jun 13 16:58:57 maksi notus-scanner[59302]: SystemExit:
+Jun 13 16:58:58 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:58:58 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:58:58 maksi systemd[1]: notus-scanner.service: Consumed 1.136s CPU time.
+Jun 13 16:59:04 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 16:59:06 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 16:59:06 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 16:59:06 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 16:59:06 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 16:59:06 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:59:06 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:59:06 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 16:59:06 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 103.
+Jun 13 16:59:06 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 103.
+Jun 13 16:59:06 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 16:59:06 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 16:59:06 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 16:59:06 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 16:59:34 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_method_call"  bus="session" path="/org/freedesktop/DBus" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_label="unconfined"[0m
+Jun 13 16:59:54 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 16:59:56 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 16:59:56 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 16:59:56 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 16:59:56 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 16:59:56 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jun 13 16:59:56 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jun 13 16:59:56 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jun 13 16:59:56 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jun 13 16:59:56 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jun 13 16:59:56 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jun 13 16:59:56 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jun 13 16:59:56 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jun 13 16:59:56 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jun 13 16:59:56 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 16:59:56 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 16:59:58 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 144.
+Jun 13 16:59:58 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 16:59:58 maksi systemd[1]: notus-scanner.service: Consumed 1.136s CPU time.
+Jun 13 16:59:58 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 16:59:58 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 16:59:59 maksi notus-scanner[59689]: Traceback (most recent call last):
+Jun 13 16:59:59 maksi notus-scanner[59689]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 16:59:59 maksi notus-scanner[59689]:     sys.exit(main())
+Jun 13 16:59:59 maksi notus-scanner[59689]:              ^^^^^^
+Jun 13 16:59:59 maksi notus-scanner[59689]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 16:59:59 maksi notus-scanner[59689]:     run_daemon(
+Jun 13 16:59:59 maksi notus-scanner[59689]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 16:59:59 maksi notus-scanner[59689]:     raise AdvisoriesLoadingError(
+Jun 13 16:59:59 maksi notus-scanner[59689]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 16:59:59 maksi notus-scanner[59689]: Exception ignored in atexit callback: <function exit_cleanup at 0x748677df7060>
+Jun 13 16:59:59 maksi notus-scanner[59689]: Traceback (most recent call last):
+Jun 13 16:59:59 maksi notus-scanner[59689]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 16:59:59 maksi notus-scanner[59689]:     sys.exit()
+Jun 13 16:59:59 maksi notus-scanner[59689]: SystemExit:
+Jun 13 16:59:59 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 16:59:59 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 16:59:59 maksi systemd[1]: notus-scanner.service: Consumed 1.238s CPU time.
+Jun 13 17:00:15 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 17:00:15 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 17:00:16 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 17:00:16 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 17:00:27 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 17:00:27 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_method_call"  bus="session" path="/org/freedesktop/DBus" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_label="unconfined"[0m
+Jun 13 17:00:36 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 17:00:36 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 17:00:36 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 17:00:36 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 17:00:36 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 17:00:36 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 17:00:36 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 17:00:36 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 104.
+Jun 13 17:00:36 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 104.
+Jun 13 17:00:36 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 17:00:36 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 17:00:36 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 17:00:36 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 17:00:44 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 17:00:44 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 17:00:45 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 17:00:45 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 17:00:52 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 17:00:59 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 145.
+Jun 13 17:00:59 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 17:00:59 maksi systemd[1]: notus-scanner.service: Consumed 1.238s CPU time.
+Jun 13 17:00:59 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 17:00:59 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 17:01:00 maksi notus-scanner[60224]: Traceback (most recent call last):
+Jun 13 17:01:00 maksi notus-scanner[60224]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 17:01:00 maksi notus-scanner[60224]:     sys.exit(main())
+Jun 13 17:01:00 maksi notus-scanner[60224]:              ^^^^^^
+Jun 13 17:01:00 maksi notus-scanner[60224]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 17:01:00 maksi notus-scanner[60224]:     run_daemon(
+Jun 13 17:01:00 maksi notus-scanner[60224]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 17:01:00 maksi notus-scanner[60224]:     raise AdvisoriesLoadingError(
+Jun 13 17:01:00 maksi notus-scanner[60224]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 17:01:00 maksi notus-scanner[60224]: Exception ignored in atexit callback: <function exit_cleanup at 0x7bcf96df7060>
+Jun 13 17:01:00 maksi notus-scanner[60224]: Traceback (most recent call last):
+Jun 13 17:01:00 maksi notus-scanner[60224]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 17:01:00 maksi notus-scanner[60224]:     sys.exit()
+Jun 13 17:01:00 maksi notus-scanner[60224]: SystemExit:
+Jun 13 17:01:00 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 17:01:00 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 17:01:00 maksi systemd[1]: notus-scanner.service: Consumed 1.218s CPU time.
+Jun 13 17:01:01 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 17:01:01 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 12 threads of 9 processes of 1 users.[0m
+Jun 13 17:01:01 maksi rtkit-daemon[2214]: Successfully made thread 60496 of process 60124 owned by '1000' RT at priority 10.
+Jun 13 17:01:01 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 13 threads of 10 processes of 1 users.[0m
+Jun 13 17:01:09 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 17:01:19 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 17:02:00 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 146.
+Jun 13 17:02:00 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 17:02:00 maksi systemd[1]: notus-scanner.service: Consumed 1.218s CPU time.
+Jun 13 17:02:00 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 17:02:00 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 17:02:01 maksi notus-scanner[60541]: Traceback (most recent call last):
+Jun 13 17:02:01 maksi notus-scanner[60541]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 17:02:01 maksi notus-scanner[60541]:     sys.exit(main())
+Jun 13 17:02:01 maksi notus-scanner[60541]:              ^^^^^^
+Jun 13 17:02:01 maksi notus-scanner[60541]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 17:02:01 maksi notus-scanner[60541]:     run_daemon(
+Jun 13 17:02:01 maksi notus-scanner[60541]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 17:02:01 maksi notus-scanner[60541]:     raise AdvisoriesLoadingError(
+Jun 13 17:02:01 maksi notus-scanner[60541]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 17:02:01 maksi notus-scanner[60541]: Exception ignored in atexit callback: <function exit_cleanup at 0x71e92adf7060>
+Jun 13 17:02:01 maksi notus-scanner[60541]: Traceback (most recent call last):
+Jun 13 17:02:01 maksi notus-scanner[60541]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 17:02:01 maksi notus-scanner[60541]:     sys.exit()
+Jun 13 17:02:01 maksi notus-scanner[60541]: SystemExit:
+Jun 13 17:02:01 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 17:02:01 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 17:02:01 maksi systemd[1]: notus-scanner.service: Consumed 1.181s CPU time.
+Jun 13 17:02:07 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 17:02:07 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 17:02:07 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 17:02:07 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 17:02:07 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 17:02:07 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 17:02:07 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 17:02:07 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 105.
+Jun 13 17:02:07 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 105.
+Jun 13 17:02:07 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 17:02:07 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 17:02:07 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 17:02:07 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 17:02:22 maksi systemd[3129]: Started snap.code.code-302503f6-27f1-4018-b704-cb58b2bba831.scope.
+Jun 13 17:02:23 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287343.200:335): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 17:02:24 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287344.680:336): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 17:02:27 maksi systemd[3129]: Started snap.code.code-0990586a-eadc-4016-b400-91ef7434834b.scope.
+Jun 13 17:02:28 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287348.348:337): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 17:02:29 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287349.536:338): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 17:02:32 maksi systemd[3129]: Started app-gnome-x\x2dterminal\x2demulator-61628.scope - Application launched by gsd-media-keys.
+Jun 13 17:02:32 maksi systemd[3129]: Started vte-spawn-83e0cf7f-af05-42f6-89db-69a3602fd336.scope - VTE child process 61636 launched by gnome-terminal-server process 51737.
+Jun 13 17:02:34 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:02:34 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:02:34 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jun 13 17:02:34 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jun 13 17:02:34 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jun 13 17:02:34 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jun 13 17:02:34 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jun 13 17:02:34 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jun 13 17:02:34 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jun 13 17:02:34 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jun 13 17:02:34 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jun 13 17:02:34 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:02:34 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:02:47 maksi systemd[3129]: snap.code.code-302503f6-27f1-4018-b704-cb58b2bba831.scope: Consumed 7.441s CPU time.
+Jun 13 17:02:54 maksi systemd[3129]: Started snap.code.code-4a889d27-e678-4e32-adba-5f9566557500.scope.
+Jun 13 17:02:55 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287375.373:339): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 17:02:56 maksi systemd[3129]: snap.code.code-0990586a-eadc-4016-b400-91ef7434834b.scope: Consumed 4.542s CPU time.
+Jun 13 17:02:56 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287376.837:340): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 17:03:00 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 13 threads of 10 processes of 1 users.[0m
+Jun 13 17:03:00 maksi rtkit-daemon[2214]: [0;38;5;245m[0;1;31m[0;38;5;245mSupervising 13 threads of 10 processes of 1 users.[0m
+Jun 13 17:03:01 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 147.
+Jun 13 17:03:01 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 17:03:01 maksi systemd[1]: notus-scanner.service: Consumed 1.181s CPU time.
+Jun 13 17:03:01 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 17:03:02 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 17:03:02 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:02 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jun 13 17:03:03 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:03 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:03 maksi notus-scanner[62139]: Traceback (most recent call last):
+Jun 13 17:03:03 maksi notus-scanner[62139]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 17:03:03 maksi notus-scanner[62139]:     sys.exit(main())
+Jun 13 17:03:03 maksi notus-scanner[62139]:              ^^^^^^
+Jun 13 17:03:03 maksi notus-scanner[62139]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 17:03:03 maksi notus-scanner[62139]:     run_daemon(
+Jun 13 17:03:03 maksi notus-scanner[62139]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 17:03:03 maksi notus-scanner[62139]:     raise AdvisoriesLoadingError(
+Jun 13 17:03:03 maksi notus-scanner[62139]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 17:03:03 maksi notus-scanner[62139]: Exception ignored in atexit callback: <function exit_cleanup at 0x7e1958ff7060>
+Jun 13 17:03:03 maksi notus-scanner[62139]: Traceback (most recent call last):
+Jun 13 17:03:03 maksi notus-scanner[62139]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 17:03:03 maksi notus-scanner[62139]:     sys.exit()
+Jun 13 17:03:03 maksi notus-scanner[62139]: SystemExit:
+Jun 13 17:03:03 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 17:03:03 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 17:03:03 maksi systemd[1]: notus-scanner.service: Consumed 1.552s CPU time.
+Jun 13 17:03:03 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:03 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jun 13 17:03:03 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jun 13 17:03:03 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:03 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:06 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:06 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:06 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jun 13 17:03:06 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jun 13 17:03:06 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jun 13 17:03:06 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jun 13 17:03:06 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jun 13 17:03:06 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jun 13 17:03:06 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jun 13 17:03:06 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jun 13 17:03:06 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jun 13 17:03:06 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:06 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:11 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 17:03:13 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 17:03:14 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 17:03:37 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: start operation timed out. Terminating.[0m
+Jun 13 17:03:37 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgvmd.service: Failed with result 'timeout'.[0m
+Jun 13 17:03:37 maksi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).[0m
+Jun 13 17:03:37 maksi systemd[1]: Starting gsad.service - Greenbone Security Assistant daemon (gsad)...
+Jun 13 17:03:37 maksi systemd[1]: Started gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 17:03:37 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mgsad.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 17:03:37 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Failed with result 'exit-code'.[0m
+Jun 13 17:03:37 maksi systemd[1]: gvmd.service: Scheduled restart job, restart counter is at 106.
+Jun 13 17:03:37 maksi systemd[1]: gsad.service: Scheduled restart job, restart counter is at 106.
+Jun 13 17:03:37 maksi systemd[1]: Stopped gsad.service - Greenbone Security Assistant daemon (gsad).
+Jun 13 17:03:37 maksi systemd[1]: Stopped gvmd.service - Greenbone Vulnerability Manager daemon (gvmd).
+Jun 13 17:03:37 maksi systemd[1]: Starting gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)...
+Jun 13 17:03:37 maksi systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: No such file or directory
+Jun 13 17:03:49 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:49 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:49 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Jun 13 17:03:49 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Jun 13 17:03:49 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Jun 13 17:03:49 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Jun 13 17:03:49 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Jun 13 17:03:49 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Jun 13 17:03:49 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Jun 13 17:03:49 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Jun 13 17:03:49 maksi gnome-shell[3457]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Jun 13 17:03:49 maksi gnome-terminal-[51737]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:49 maksi evince[8221]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mg_atomic_ref_count_dec: assertion 'old_value > 0' failed[0m
+Jun 13 17:03:51 maksi systemd[3129]: Started snap.code.code-c8788a75-2058-430b-ac1a-75a606482c2e.scope.
+Jun 13 17:03:52 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287432.486:341): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 17:03:53 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287433.918:342): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 17:03:55 maksi systemd[3129]: snap.code.code-4a889d27-e678-4e32-adba-5f9566557500.scope: Consumed 4.591s CPU time.
+Jun 13 17:03:56 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 17:04:03 maksi systemd[1]: notus-scanner.service: Scheduled restart job, restart counter is at 148.
+Jun 13 17:04:03 maksi systemd[1]: Stopped notus-scanner.service - Notus Scanner.
+Jun 13 17:04:03 maksi systemd[1]: notus-scanner.service: Consumed 1.552s CPU time.
+Jun 13 17:04:03 maksi gnome-shell[3457]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mCan't update stage views actor <unnamed>[<MetaWindowActorX11>:0x5d1b41c503d0] is on because it needs an allocation.[0m
+Jun 13 17:04:03 maksi gnome-shell[3457]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mCan't update stage views actor <unnamed>[<MetaSurfaceActorX11>:0x5d1b3df61520] is on because it needs an allocation.[0m
+Jun 13 17:04:03 maksi systemd[1]: Starting notus-scanner.service - Notus Scanner...
+Jun 13 17:04:03 maksi systemd[1]: Started notus-scanner.service - Notus Scanner.
+Jun 13 17:04:05 maksi notus-scanner[62790]: Traceback (most recent call last):
+Jun 13 17:04:05 maksi notus-scanner[62790]:   File "/usr/bin/notus-scanner", line 8, in <module>
+Jun 13 17:04:05 maksi notus-scanner[62790]:     sys.exit(main())
+Jun 13 17:04:05 maksi notus-scanner[62790]:              ^^^^^^
+Jun 13 17:04:05 maksi notus-scanner[62790]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 154, in main
+Jun 13 17:04:05 maksi notus-scanner[62790]:     run_daemon(
+Jun 13 17:04:05 maksi notus-scanner[62790]:   File "/usr/lib/python3/dist-packages/notus/scanner/daemon.py", line 98, in run_daemon
+Jun 13 17:04:05 maksi notus-scanner[62790]:     raise AdvisoriesLoadingError(
+Jun 13 17:04:05 maksi notus-scanner[62790]: notus.scanner.errors.AdvisoriesLoadingError: Can't load advisories. /var/lib/notus/products is not a directory.
+Jun 13 17:04:05 maksi notus-scanner[62790]: Exception ignored in atexit callback: <function exit_cleanup at 0x7cc462c8f060>
+Jun 13 17:04:05 maksi notus-scanner[62790]: Traceback (most recent call last):
+Jun 13 17:04:05 maksi notus-scanner[62790]:   File "/usr/lib/python3/dist-packages/notus/scanner/utils.py", line 114, in exit_cleanup
+Jun 13 17:04:05 maksi notus-scanner[62790]:     sys.exit()
+Jun 13 17:04:05 maksi notus-scanner[62790]: SystemExit:
+Jun 13 17:04:05 maksi systemd[1]: [0;1;39m[0;1;31m[0;1;39mnotus-scanner.service: Main process exited, code=exited, status=1/FAILURE[0m
+Jun 13 17:04:05 maksi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mnotus-scanner.service: Failed with result 'exit-code'.[0m
+Jun 13 17:04:05 maksi systemd[1]: notus-scanner.service: Consumed 1.587s CPU time.
+Jun 13 17:04:09 maksi systemd[3129]: snap.code.code-c8788a75-2058-430b-ac1a-75a606482c2e.scope: Consumed 4.429s CPU time.
+Jun 13 17:04:31 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 17:04:31 maksi dbus-daemon[3160]: [0;1;39m[0;1;31m[0;1;39mapparmor="DENIED" operation="dbus_signal"  bus="session" path="/com/canonical/unity/launcherentry/TelegramDesktop" interface="com.canonical.Unity.LauncherEntry" member="Update" mask="send" name="org.freedesktop.DBus" pid=3664 label="snap.telegram-desktop.telegram-desktop" peer_pid=3457 peer_label="unconfined"[0m
+Jun 13 17:04:50 maksi systemd[3129]: Started snap.code.code-96069a94-3797-470f-b78b-4dd067d71acd.scope.
+Jun 13 17:04:51 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287491.403:343): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m
+Jun 13 17:04:52 maksi kernel: [0;1;39m[0;1;31m[0;1;39maudit: type=1107 audit(1718287492.787:344): pid=823 uid=101 auid=4294967295 ses=4294967295 subj=unconfined msg='apparmor="DENIED" operation="dbus_signal"  bus="system" path="/org/freedesktop/login1" interface="org.freedesktop.DBus.Properties" member="PropertiesChanged" name=":1.14" mask="receive" pid=3703 label="snap.firefox.firefox" peer_pid=865 peer_label="unconfined"[0m
+                              [0;1;39m exe="/usr/bin/dbus-daemon" sauid=101 hostname=? addr=? terminal=?'[0m

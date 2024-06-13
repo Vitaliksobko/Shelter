@@ -8,7 +8,7 @@ public interface IAdminService
 {
      Task<List<Animal>> GetAllAnimals();
 
-     Task<List<User>> GetAllUsers();
+     Task<List<UserDto>> GetAllUsers();
 
      Task CreateAnimal(CreateAnimalDto createAnimalDto);
 

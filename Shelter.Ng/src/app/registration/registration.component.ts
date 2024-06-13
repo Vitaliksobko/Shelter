@@ -19,6 +19,8 @@ export class RegistrationComponent {
   onRegistration(){
     this.authService.registration(this.registrationModel).subscribe(data =>{
       this.localService.put(LocalService.AuthTokenName ,data);
+      this.localService.put(LocalService.AuthRole, "User");
+
      
       window.location.href = '/home'
     },
