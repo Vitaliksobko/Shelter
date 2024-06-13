@@ -28,6 +28,7 @@ import { AminalUpdateComponent } from './admin/admin-animal/aminal-update/aminal
 import { NewsUpdateComponent } from './admin/admin-news/news-update/news-update.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { AboutComponent } from './about/about.component';
+import { NewDetailComponent } from './news/new-detail/new-detail.component';
 
 
 
@@ -52,7 +53,8 @@ import { AboutComponent } from './about/about.component';
     AminalUpdateComponent,
     NewsUpdateComponent,
     TopMenuComponent,
-    AboutComponent
+    AboutComponent,
+    NewDetailComponent
 
     
   ],

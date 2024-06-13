@@ -6,7 +6,7 @@ public class UpdateNewsDto
 {
     public Guid NewsId { get; set; }
     
-    public IFormFile Image { get; set; }
+    public IFormFile? Image { get; set; }
 
     public string Title { get; set; }
     
