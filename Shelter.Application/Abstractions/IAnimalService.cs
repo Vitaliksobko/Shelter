@@ -12,4 +12,6 @@ public interface IAnimalService
     Task<Animal> BookAnimal(AnimalIdDto animalIdDto, Booking booking);
 
     Task UpdateAnimal(UpdateAnimalDto updateAnimalDto);
+    
+    Task<Animal> AdoptAnimal(Guid animalId);
 }

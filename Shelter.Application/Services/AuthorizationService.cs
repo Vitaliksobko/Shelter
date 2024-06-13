@@ -68,7 +68,7 @@ public class AuthorizationService : IAuthorizationService
         if (!result.Succeeded)
             throw new Exception(result.Errors.First().Description);
 
-        await _userManager.AddToRoleAsync(user, "User");
+        await _userManager.AddToRoleAsync(user, "Admin");
         
         return user.Id;
 

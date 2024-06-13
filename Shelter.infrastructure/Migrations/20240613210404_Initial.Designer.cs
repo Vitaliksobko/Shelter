@@ -12,7 +12,7 @@ using Shelter.infrastructure;
 namespace Shelter.infrastructure.Migrations
 {
     [DbContext(typeof(ShelterDbContext))]
-    [Migration("20240605200343_Initial")]
+    [Migration("20240613210404_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -134,6 +134,9 @@ namespace Shelter.infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<DateTime?>("AdoptedAt")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<int>("Age")
                         .HasColumnType("integer");
 
@@ -152,6 +155,9 @@ namespace Shelter.infrastructure.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
 
                     b.HasKey("AnimalId");
 
@@ -216,6 +222,40 @@ namespace Shelter.infrastructure.Migrations
                     b.ToTable("News");
                 });
 
+            modelBuilder.Entity("Shelter.Core.Models.Question", b =>
+                {
+                    b.Property<Guid>("QuestionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SecondName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("UserQuestion")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("QuestionId");
+
+                    b.ToTable("Questions");
+                });
+
             modelBuilder.Entity("Shelter.Core.Models.Role", b =>
                 {
                     b.Property<Guid>("Id")
@@ -245,13 +285,13 @@ namespace Shelter.infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("41a2d739-3f09-498d-9989-8b07e1a73069"),
+                            Id = new Guid("0430ce73-b0ea-4172-8d47-bc68fb75acce"),
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = new Guid("9974388e-e1f7-4d52-9c49-0c36e5343810"),
+                            Id = new Guid("c11fce93-f59a-4916-95cf-9139e6b75c05"),
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

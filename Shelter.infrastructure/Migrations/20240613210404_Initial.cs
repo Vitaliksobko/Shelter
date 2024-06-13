@@ -19,6 +19,8 @@ namespace Shelter.infrastructure.Migrations
                 columns: table => new
                 {
                     AnimalId = table.Column<Guid>(type: "uuid", nullable: false),
+                    Status = table.Column<int>(type: "integer", nullable: false),
+                    AdoptedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
                     Image = table.Column<string>(type: "text", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: false),
                     Age = table.Column<int>(type: "integer", nullable: false),
@@ -85,6 +87,23 @@ namespace Shelter.infrastructure.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_News", x => x.NewsId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Questions",
+                columns: table => new
+                {
+                    QuestionId = table.Column<Guid>(type: "uuid", nullable: false),
+                    FirstName = table.Column<string>(type: "text", nullable: false),
+                    SecondName = table.Column<string>(type: "text", nullable: false),
+                    Email = table.Column<string>(type: "text", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "text", nullable: false),
+                    UserQuestion = table.Column<string>(type: "text", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Questions", x => x.QuestionId);
                 });
 
             migrationBuilder.CreateTable(
@@ -225,8 +244,8 @@ namespace Shelter.infrastructure.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { new Guid("41a2d739-3f09-498d-9989-8b07e1a73069"), null, "User", "USER" },
-                    { new Guid("9974388e-e1f7-4d52-9c49-0c36e5343810"), null, "Admin", "ADMIN" }
+                    { new Guid("0430ce73-b0ea-4172-8d47-bc68fb75acce"), null, "User", "USER" },
+                    { new Guid("c11fce93-f59a-4916-95cf-9139e6b75c05"), null, "Admin", "ADMIN" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -300,6 +319,9 @@ namespace Shelter.infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "News");
+
+            migrationBuilder.DropTable(
+                name: "Questions");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

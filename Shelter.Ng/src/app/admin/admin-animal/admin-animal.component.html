@@ -2,6 +2,9 @@
   <div class="content">
     <div class="animals-box">
       <div class="animal" *ngFor="let animal of animals">
+        <div class="status-indicator-container">
+          <div class="status-indicator" [ngClass]="{'yellow-indicator': animal.status === animalStatus.InProcess, 'red-indicator': animal.status === animalStatus.Adopted, 'green-indicator':animal.status === animalStatus.Available}"></div>
+        </div>
         <div class="profile">
           <div class="img">
             <img [src]="animal.image" alt="">
@@ -24,8 +27,16 @@
               <span>{{animal.description}}</span>
             </div>
             <div class="btnn">
+              
               <button [routerLink]="'/admin-animal/edit-animal/'+ animal.animalId">Edit</button>
               <button (click)="delete(animal.animalId)">Delete</button>
+              
+            </div>
+            <div class="btnn">
+              
+              
+              <button *ngIf="animal.status === animalStatus.InProcess" (click)="confirm(animal.animalId)">Confirm</button>
+              <button *ngIf="animal.status === animalStatus.InProcess" (click)="reject(animal.animalId)">Reject</button>
             </div>
           </div>
         </div>

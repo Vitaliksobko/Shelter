@@ -1,3 +1,5 @@
+import { AnimalStatus } from "../enum/animalStatus";
+
 export class Animal {
     animalId : string = '';
     name : string = '';
@@ -5,7 +7,7 @@ export class Animal {
     breed : string = '';
     description : string = '';
     image: string | null = '';
-    
+    status: AnimalStatus = AnimalStatus.Available;
     
 
 }

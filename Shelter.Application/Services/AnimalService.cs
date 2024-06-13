@@ -3,12 +3,17 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Shelter.Application.Abstractions;
 using Shelter.Core.Abstraction;
 using Shelter.Core.Dtos;
+using Shelter.Core.Enum;
 using Shelter.Core.Models;
 
 namespace Shelter.Application.Services;
 
 public class AnimalService(IFileService fileService,IUnitOfWork _unitOfWork, IMapper _mapper) : IAnimalService
 {
+    
+    private readonly Timer _adoptedAnimalCleanupTimer;
+    
+    
     public async Task<List<Animal>> GetAll()
     {
         var animal = await _unitOfWork.Animal.GetAll();
@@ -24,16 +29,26 @@ public class AnimalService(IFileService fileService,IUnitOfWork _unitOfWork, IMa
         return animal;
     }
 
-    public async Task<Animal> BookAnimal(AnimalIdDto animalIdDto, Booking booking)
+    public async Task<Animal?> BookAnimal(AnimalIdDto animalIdDto, Booking booking)
     {
         var animal = await _unitOfWork.Animal.GetSingleByConditionAsync(a => a.AnimalId == animalIdDto.AnimalId);
         if (animal == null)
         {
-           
             return null;
         }
 
-        var createBooking = new Booking()
+        // Перевірка накладання прогулянок
+        var existingBookings = await _unitOfWork.Booking.GetByConditionsAsync(a => a.AnimalId == animalIdDto.AnimalId);
+        foreach (var existingBooking in existingBookings)
+        {
+            if (booking.StartTime < existingBooking.EndTime && booking.EndTime > existingBooking.StartTime)
+            {
+                // Нова прогулянка перетинається з існуючою
+                return null;
+            }
+        }
+
+        var createBooking = new Booking
         {
             AnimalId = animalIdDto.AnimalId,
             StartTime = DateTime.SpecifyKind(booking.StartTime, DateTimeKind.Unspecified),
@@ -75,6 +90,24 @@ public class AnimalService(IFileService fileService,IUnitOfWork _unitOfWork, IMa
         await _unitOfWork.SaveAsync();
 
         
+    }
+    
+    
+    public async Task<Animal> AdoptAnimal(Guid animalId)
+    {
+        var animal = await _unitOfWork.Animal.GetSingleByConditionAsync(
+            a => a.AnimalId == animalId);
+
+        if (animal == null)
+        {
+            return null;
+        }
+    
+        animal.Status = AnimalStatus.InProcess;
+        _unitOfWork.Animal.Update(animal);
+        await _unitOfWork.SaveAsync();
+       
+        return animal;
     }
 
 

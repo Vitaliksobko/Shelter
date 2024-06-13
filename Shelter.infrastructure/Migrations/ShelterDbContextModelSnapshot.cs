@@ -131,6 +131,9 @@ namespace Shelter.infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<DateTime?>("AdoptedAt")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<int>("Age")
                         .HasColumnType("integer");
 
@@ -149,6 +152,9 @@ namespace Shelter.infrastructure.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
 
                     b.HasKey("AnimalId");
 
@@ -276,13 +282,13 @@ namespace Shelter.infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("78ea2e80-a5ac-479c-856f-7ad5110a9821"),
+                            Id = new Guid("0430ce73-b0ea-4172-8d47-bc68fb75acce"),
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = new Guid("805e0d9a-a300-4438-aecd-40ca16fa97ba"),
+                            Id = new Guid("c11fce93-f59a-4916-95cf-9139e6b75c05"),
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
