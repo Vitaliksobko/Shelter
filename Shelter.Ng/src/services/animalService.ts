@@ -29,6 +29,11 @@ export class AnimalService {
     return this.http.put('api/animal', updateProductModel);
   }
 
+  adoptAnimal(animalId: string): Observable<any> {
+    const url = `${this.apiUrl}/${animalId}/adopt`;
+    return this.http.put(url, null); 
+  }
+
 
 
   

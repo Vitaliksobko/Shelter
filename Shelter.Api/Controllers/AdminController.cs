@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Shelter.Application.Abstractions;
 using Shelter.Core.Dtos;
+using Shelter.Core.Enum;
 using Shelter.Core.Models;
 using Shop.Core.Dtos;
 
@@ -73,6 +74,34 @@ public class AdminController : Controller
     public async Task DeleteAnimal(Guid id)
     {
         await _adminService.DeleteAnimal(id);
+    }
+    
+    
+  
+    
+    
+    [HttpPut("{animalId}/confirm")]
+    public async Task<IActionResult> AdoptConfirm(Guid animalId)
+    {
+        var animal = await _adminService.AdoptConfirm(animalId);
+        if (animal == null)
+        {
+            return NotFound();
+        }
+        
+        return Ok(animal);
+    }
+    
+    [HttpPut("{animalId}/reject")]
+    public async Task<IActionResult> AdoptReject(Guid animalId)
+    {
+        var animal = await _adminService.AdoptReject(animalId);
+        if (animal == null)
+        {
+            return NotFound();
+        }
+        
+        return Ok(animal);
     }
 
     

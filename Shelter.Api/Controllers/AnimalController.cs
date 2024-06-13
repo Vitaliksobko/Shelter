@@ -36,7 +36,7 @@ public class AnimalController : Controller
         var animal = await _animalService.BookAnimal(animalIdDto, booking);
         if (animal == null)
         {
-            return NotFound();
+            return BadRequest();
         }
 
         return Ok(animal);
@@ -58,4 +58,16 @@ public class AnimalController : Controller
         }
     }
   
+    
+    [HttpPut("{animalId}/adopt")]
+    public async Task<IActionResult> AdoptAnimal(Guid animalId)
+    {
+        var animal = await _animalService.AdoptAnimal(animalId);
+        if (animal == null)
+        {
+            return NotFound();
+        }
+        
+        return Ok(animal);
+    }
 }

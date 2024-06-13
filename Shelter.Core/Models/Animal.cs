@@ -1,9 +1,15 @@
+using Shelter.Core.Enum;
+
 namespace Shelter.Core.Models;
 
 public class Animal
 {
     
     public Guid AnimalId { get; set; }
+    
+    public AnimalStatus Status { get; set; }
+    
+    public DateTime? AdoptedAt { get; set; }
 
     public string Image { get; set; } = string.Empty;
     

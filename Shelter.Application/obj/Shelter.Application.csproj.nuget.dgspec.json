@@ -1,36 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "/home/maksi/Studying/Shelter/Shelter.Application/Shelter.Application.csproj": {}
+    "D:\\Prakt\\Shelter\\Shelter.Application\\Shelter.Application.csproj": {}
   },
   "projects": {
-    "/home/maksi/Studying/Shelter/Shelter.Application/Shelter.Application.csproj": {
+    "D:\\Prakt\\Shelter\\Shelter.Application\\Shelter.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/maksi/Studying/Shelter/Shelter.Application/Shelter.Application.csproj",
+        "projectUniqueName": "D:\\Prakt\\Shelter\\Shelter.Application\\Shelter.Application.csproj",
         "projectName": "Shelter.Application",
-        "projectPath": "/home/maksi/Studying/Shelter/Shelter.Application/Shelter.Application.csproj",
-        "packagesPath": "/home/maksi/.nuget/packages/",
-        "outputPath": "/home/maksi/Studying/Shelter/Shelter.Application/obj/",
+        "projectPath": "D:\\Prakt\\Shelter\\Shelter.Application\\Shelter.Application.csproj",
+        "packagesPath": "C:\\Users\\unieuro\\.nuget\\packages\\",
+        "outputPath": "D:\\Prakt\\Shelter\\Shelter.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/maksi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\unieuro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/maksi/Studying/Shelter/Shelter.Core/Shelter.Core.csproj": {
-                "projectPath": "/home/maksi/Studying/Shelter/Shelter.Core/Shelter.Core.csproj"
+              "D:\\Prakt\\Shelter\\Shelter.Core\\Shelter.Core.csproj": {
+                "projectPath": "D:\\Prakt\\Shelter\\Shelter.Core\\Shelter.Core.csproj"
               },
-              "/home/maksi/Studying/Shelter/Shelter.infrastructure/Shelter.infrastructure.csproj": {
-                "projectPath": "/home/maksi/Studying/Shelter/Shelter.infrastructure/Shelter.infrastructure.csproj"
+              "D:\\Prakt\\Shelter\\Shelter.infrastructure\\Shelter.infrastructure.csproj": {
+                "projectPath": "D:\\Prakt\\Shelter\\Shelter.infrastructure\\Shelter.infrastructure.csproj"
               }
             }
           }
@@ -66,26 +68,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/maksi/Studying/Shelter/Shelter.Core/Shelter.Core.csproj": {
+    "D:\\Prakt\\Shelter\\Shelter.Core\\Shelter.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/maksi/Studying/Shelter/Shelter.Core/Shelter.Core.csproj",
+        "projectUniqueName": "D:\\Prakt\\Shelter\\Shelter.Core\\Shelter.Core.csproj",
         "projectName": "Shelter.Core",
-        "projectPath": "/home/maksi/Studying/Shelter/Shelter.Core/Shelter.Core.csproj",
-        "packagesPath": "/home/maksi/.nuget/packages/",
-        "outputPath": "/home/maksi/Studying/Shelter/Shelter.Core/obj/",
+        "projectPath": "D:\\Prakt\\Shelter\\Shelter.Core\\Shelter.Core.csproj",
+        "packagesPath": "C:\\Users\\unieuro\\.nuget\\packages\\",
+        "outputPath": "D:\\Prakt\\Shelter\\Shelter.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/maksi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\unieuro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -145,34 +149,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/maksi/Studying/Shelter/Shelter.infrastructure/Shelter.infrastructure.csproj": {
+    "D:\\Prakt\\Shelter\\Shelter.infrastructure\\Shelter.infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/maksi/Studying/Shelter/Shelter.infrastructure/Shelter.infrastructure.csproj",
+        "projectUniqueName": "D:\\Prakt\\Shelter\\Shelter.infrastructure\\Shelter.infrastructure.csproj",
         "projectName": "Shelter.infrastructure",
-        "projectPath": "/home/maksi/Studying/Shelter/Shelter.infrastructure/Shelter.infrastructure.csproj",
-        "packagesPath": "/home/maksi/.nuget/packages/",
-        "outputPath": "/home/maksi/Studying/Shelter/Shelter.infrastructure/obj/",
+        "projectPath": "D:\\Prakt\\Shelter\\Shelter.infrastructure\\Shelter.infrastructure.csproj",
+        "packagesPath": "C:\\Users\\unieuro\\.nuget\\packages\\",
+        "outputPath": "D:\\Prakt\\Shelter\\Shelter.infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/maksi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\unieuro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/maksi/Studying/Shelter/Shelter.Core/Shelter.Core.csproj": {
-                "projectPath": "/home/maksi/Studying/Shelter/Shelter.Core/Shelter.Core.csproj"
+              "D:\\Prakt\\Shelter\\Shelter.Core\\Shelter.Core.csproj": {
+                "projectPath": "D:\\Prakt\\Shelter\\Shelter.Core\\Shelter.Core.csproj"
               }
             }
           }
@@ -228,7 +234,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

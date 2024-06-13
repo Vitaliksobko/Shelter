@@ -2728,32 +2728,34 @@
     ]
   },
   "packageFolders": {
-    "/home/maksi/.nuget/packages/": {}
+    "C:\\Users\\unieuro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/maksi/Studying/Shelter/Shelter.infrastructure/Shelter.infrastructure.csproj",
+      "projectUniqueName": "D:\\Prakt\\Shelter\\Shelter.infrastructure\\Shelter.infrastructure.csproj",
       "projectName": "Shelter.infrastructure",
-      "projectPath": "/home/maksi/Studying/Shelter/Shelter.infrastructure/Shelter.infrastructure.csproj",
-      "packagesPath": "/home/maksi/.nuget/packages/",
-      "outputPath": "/home/maksi/Studying/Shelter/Shelter.infrastructure/obj/",
+      "projectPath": "D:\\Prakt\\Shelter\\Shelter.infrastructure\\Shelter.infrastructure.csproj",
+      "packagesPath": "C:\\Users\\unieuro\\.nuget\\packages\\",
+      "outputPath": "D:\\Prakt\\Shelter\\Shelter.infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/maksi/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\unieuro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/maksi/Studying/Shelter/Shelter.Core/Shelter.Core.csproj": {
-              "projectPath": "/home/maksi/Studying/Shelter/Shelter.Core/Shelter.Core.csproj"
+            "D:\\Prakt\\Shelter\\Shelter.Core\\Shelter.Core.csproj": {
+              "projectPath": "D:\\Prakt\\Shelter\\Shelter.Core\\Shelter.Core.csproj"
             }
           }
         }
@@ -2809,7 +2811,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
