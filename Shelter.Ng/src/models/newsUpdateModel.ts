@@ -4,6 +4,6 @@ export class newsUpdateModel {
     content : string = '';
     author : string = '';
     summary : string = '';
-    image: string  = '';
+    image: string | null  = '';
 }
 

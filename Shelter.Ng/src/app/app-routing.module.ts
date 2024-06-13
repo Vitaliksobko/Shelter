@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
 import { AboutComponent } from './about/about.component';
 import { authGuard } from '../guards/auth.guard';
+import { NewDetailComponent } from './news/new-detail/new-detail.component';
 
 const routes: Routes = [ 
 { path: "registration", component: RegistrationComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
 { path: "currentanimal/:id", component: AnimalDetailsComponent, canActivate: [authGuard] },
 { path: "home", component: HomeComponent },
 { path: "news", component: NewsComponent ,canActivate: [authGuard]},
+{ path:"new-detail/:id", component: NewDetailComponent, canActivate: [authGuard]},
 { path: "about", component: AboutComponent , canActivate: [authGuard]},
 { path: '', redirectTo: '/login', pathMatch: 'full' },
 

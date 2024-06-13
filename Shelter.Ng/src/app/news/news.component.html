@@ -21,11 +21,10 @@
               <p>
                 Author: {{ new.author }}<br />
                 Summury: {{ new.summary }}
-                {{ new.content }}
               </p>
               <a
                 class="button"
-                [routerLink]="'/currentanimal/' + new.newsId"
+                [routerLink]="'/new-detail/' + new.newsId"
               >
                 More info<span class="material-symbols-outlined">
                   arrow_right_alt
